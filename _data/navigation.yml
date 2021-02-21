@@ -1,9 +1,8 @@
+# main links
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
-    url: /about/
+    url: /resume.html
+  - title: "Running Blog"
+    url: http://jeremywalshsrunning.blogspot.com/

@@ -1,0 +1,40 @@
+- layout: left
+  company: Process Engineer
+  link: https://www.suezwatertechnologies.com/
+  job_title: SUEZ Water Technologies and Solutions
+  dates: August 2018 - present
+  # quote: >
+  #  Short description of the company (optional)
+  description: >
+    Designed and scaled regression analysis for 20 sites, evolving analytics to influence strategic planning and product design. Developed a simulation for optimal control testing. Performed process validation on drinking and waste water sites from Abu Dhabi to Mississauga.
+
+- layout: left
+  company: Project Engineer
+  link: https://www.suezwatertechnologies.com/
+  job_title: SUEZ Water Technologies and Solutions
+  dates: November 2016 - August 2018
+  description: >
+    Designed mechanical and electrical equipment within the scope and requirements of the customer for 12 projects. Controlled engineering activities to maintain work standards, adhere to timelines and meet quality assurance targets. Automated data entry for BOM creation using scripting tools.
+
+# - layout: left
+#   company: SUEZ Water Technologies and Solutions
+#   jobs:
+#     - title: Process Engineer
+#       dates: August 2018 - present
+#       description: Designed and scaled regression analysis for 20 sites, evolving analytics to influence strategic planning and product design. Developed a simulation for optimal control testing. Performed process validation on drinking and waste water sites from Abu Dhabi to Mississauga.
+#     - title: Project Engineer
+#       dates: November 2016 - August 2018
+#       description: Designed mechanical and electrical equipment within the scope and requirements of the customer for 12 projects. Controlled engineering activities to maintain work standards, adhere to timelines and meet quality assurance targets. Automated data entry for BOM creation using scripting tools.
+#   description: >
+#     Designed and scaled regression analysis for 20 sites, evolving analytics to influence strategic planning and product design. Developed a simulation for optimal control testing. Performed process validation on drinking and waste water sites from Abu Dhabi to Mississauga.
+#
+#     Designed mechanical and electrical equipment within the scope and requirements of the customer for 12 projects. Controlled engineering activities to maintain work standards, adhere to timelines and meet quality assurance targets. Automated data entry for BOM creation using scripting tools.
+# - layout: top-right
+#   company: Company 3
+#   jobs:
+#     - title: Job title 1
+#       dates: February 2013 - December 2013
+#     - title: Job title 2
+#       dates: June 2012 - February 2013
+#   description: >
+#     Description of role
