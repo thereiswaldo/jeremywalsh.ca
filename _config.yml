@@ -45,7 +45,7 @@ logo: "/assets/images/headshot.jpg"
 author:
   name     : "Jeremy Walsh"
   avatar   : "/assets/images/headshot.jpg"
-  bio      : "I'm an engineer with applying data science to water treatment and sports analytics."
+  bio      : "I'm an engineer dedicated to applying data science to water treatment and sport."
   location : "Dundas, ON, Canada"
   links:
     - label: "GitHub"
