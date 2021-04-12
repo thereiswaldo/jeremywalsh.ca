@@ -7,6 +7,8 @@ categories: Leauge of Legends, LoL, Data Visualization
 ---
 My friends and I recently started playing League of Legends. It's a 5v5 MOBA (Multiplayer Online Battle Arena) game where you play one of 154 champions and work together with your team to destroy the enemy's base. As my friends and I are new the to the game I thought I would take a look at some of the data the api makes available in order to help understand it better. First up is understanding the base statistics and categories of the champions. (If you want to follow along I have a jupyter notebook on my github you can use).
 
+## Data Exploration
+
 In general each champion has their health (hp), their magic resource (mana/mp), armour, chance for critical hits (crit), attack damage, attack speed, all of which have a partner stat for the amount they increase each time the character levels up. Additionally there is move speed and attack range which remain constant as the characters level.![League of Legends Champion Stat Histogram](/uploads/histogram.png "Champion Stat Histogram")
 
 As we can see from the histogram of each of the basic stats for all the champions, they generally follow a normal distribution, but as we will see, a game with this many characters there are many the buck any general rules.
@@ -25,10 +27,20 @@ Put simply effective health is the amount of raw burst physical or magical damag
 
 The classes then seem like an easy first pass to telling us how survivable a champion will be. Tanks take more damage to kill, and mages less. What if we wanted to group the champions by something other than their class?
 
+## Principle Component Analysis
+
 We could use a Principle Component Analysis (PCA) and see what groups of champions appear. PCA is used here to extract the most important features in the dataset and boil them down to just 2 general parameters. For a detailed explanation of PCA I would [highly recommed this youtube video.](https://www.youtube.com/watch?v=fkf4IBRSeEc)
 
 ![](/uploads/champion-stat-principle-component-analysis.png)
 
 We can see 3 somewhat distinct gropus here. I don't know enough of the champions at a glance to understand what the groupings are so we want to look at what features were important in getting us here. If we plot the relative importance of each feature on the graph we get this graph:
 
-![](/uploads/champion-stat-principle-component-analysis.png)
+![](/uploads/feature-importance-principle-component-analysis.png)
+
+It seems the three groups are at the top right, champions that don't use mana, at the bottom middle melee champions that use mana, and the left grouping being mana using ranged champions.
+
+In the dataset from the API a feature called partype is used to identify if a champion uses mana or some other type of ability (like energy). For this analysis I took that categorical data and used one-hot encoding to be able work with it. When trying to group champions it looks like whether or not they use mana is important.
+
+## Logistic Regression
+
+Since the base stats so far seem to do a good job 
