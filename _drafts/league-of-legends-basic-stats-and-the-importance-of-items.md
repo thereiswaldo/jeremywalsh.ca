@@ -29,4 +29,6 @@ We could use a Principle Component Analysis (PCA) and see what groups of champio
 
 ![](/uploads/champion-stat-principle-component-analysis.png)
 
-We can see 3 somewhat distinct gropus here. I don't know enough of the champions at a glance to understand what the groupings are so we want to look at what features were important in getting us here.
+We can see 3 somewhat distinct gropus here. I don't know enough of the champions at a glance to understand what the groupings are so we want to look at what features were important in getting us here. If we plot the relative importance of each feature on the graph we get this graph:
+
+![](/uploads/champion-stat-principle-component-analysis.png)
