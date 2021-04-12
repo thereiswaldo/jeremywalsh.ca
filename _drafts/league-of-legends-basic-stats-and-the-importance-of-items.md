@@ -17,6 +17,6 @@ League of Legends has 6 classes that can be used to identify differences in the 
 
 ![](/uploads/hp-and-armour-lvl-18.png)
 
-Plotting the hp and armour at level 1 and the max level 18 for each primary class doesn't totally validate this theory. It is important to note that I'm only using their primary class. 116 of the 154 champions have a secondary class listed that we are ignoring here for simplicity. Due to the complexity of the game our goal isn't to fully understand every detail of the champions, just enough that at a glance I can look at a champion with Tank as a Primary Class and safely assume they will have one of the highest hp and armour in the game.
+Plotting the hp and armour at level 1 and the max level 18 for each primary class doesn't totally validate this theory. It is important to note that I'm only using their primary class. 116 of the 154 champions have a secondary class listed that we are ignoring here for simplicity. Due to the complexity of the game our goal isn't to fully understand every detail of the champions, just enough that at a glance I can look at a champion with Tank as a Primary Class and safely assume they will have one of the highest hp and armour in the game. One way of doing this is looking at the eff
 
 * explain effective health, then show those graphs, then some basic analysis for does the tank have highest, who ahas lowest before doing classifier type work
