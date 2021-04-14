@@ -43,4 +43,17 @@ In the dataset from the API a feature called partype is used to identify if a ch
 
 ## Logistic Regression
 
-Since the base stats so far seem to do a good job 
+Since the base stats so far seem to do a good job classifying each character, I wanted to see how accurately we could classify each champion using only their base statistics. To do this we'll take 70% of champions with all the features we've used so far, and train a logistic regression model. After training we can take the randomly assigned 30% of champions we didn't train on, and apply our logistic regression model to see how accurately we can classify champions based only on their base stats.
+
+![](/uploads/class-prediction-confusion-matrix-heatmap.png "Logistic Regression Confusion Matrix")
+
+We can see from the confusion matrix that we do an decent job predicting the Fighters, Mages, Marksmans and Supports, but haven't figured out Assassins and Tanks. If we were 100% accurate with this model we would see zeroes in every cell except for the main diagonal. Printing out the accuracy score we get 65.96%, and the following classification report.
+
+    #Print the accuracy score of the logistic regression
+    print('Accuracy Score:', round(accuracy_score(y_test, preds),4)*100, '%')  
+    
+    #Create classification report
+    class_report=classification_report(y_test, preds)
+    print(class_report)	
+
+> 
