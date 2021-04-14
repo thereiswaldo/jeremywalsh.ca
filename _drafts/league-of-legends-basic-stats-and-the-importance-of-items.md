@@ -47,7 +47,7 @@ Since the base stats so far seem to do a good job classifying each character, I 
 
 ![](/uploads/class-prediction-confusion-matrix-heatmap.png "Logistic Regression Confusion Matrix")
 
-We can see from the confusion matrix that we do an decent job predicting the Fighters, Mages, Marksmans and Supports, but haven't figured out Assassins and Tanks. If we were 100% accurate with this model we would see zeroes in every cell except for the main diagonal. Printing out the accuracy score we get 65.96%, and the following classification report.
+We can see from the confusion matrix that we do an decent job predicting the Fighters, Mages, Marksmen and Supports, but haven't figured out Assassins and Tanks. If we were 100% accurate with this model we would see zeroes in every cell except for the main diagonal. Printing out the accuracy score we get 65.96%, and the following classification report.
 
     #Print the accuracy score of the logistic regression
     print('Accuracy Score:', round(accuracy_score(y_test, preds),4)*100, '%')  
@@ -56,4 +56,8 @@ We can see from the confusion matrix that we do an decent job predicting the Fig
     class_report=classification_report(y_test, preds)
     print(class_report)	
 
-> 
+![](/uploads/classification-report.png)
+
+Like we saw from the confusion matrix, we can predict a few classes with good precision and recall, but on average we just aren't there with this method. One of the advantages of using a logistic regression classifier is it's interpretability, but with this low of accuracy it doesn't tell us much. Without going into details the takeaway is that Marksmen and Mages have distinctive base stats, where Assassins and Tanks vary heavily.
+
+Since base stats don't provide us enough information my next post is going to look at how each player can customize their champion with items in game, and the underlying importance of gold in the game.
