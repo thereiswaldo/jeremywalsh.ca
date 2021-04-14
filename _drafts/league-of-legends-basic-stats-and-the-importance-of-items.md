@@ -5,15 +5,15 @@ date: 2021-03-25 04:00:00 +0000
 categories: Leauge of Legends, LoL, Data Visualization
 
 ---
-My friends and I recently started playing League of Legends. It's a 5v5 MOBA (Multiplayer Online Battle Arena) game where you play one of 154 champions and work together with your team to destroy the enemy's base. As my friends and I are new the to the game I thought I would take a look at some of the data the api makes available in order to help understand it better. First up is understanding the base statistics and categories of the champions. (If you want to follow along I have a jupyter notebook on my github you can use).
+My friends and I recently started playing League of Legends. It's a 5v5 MOBA (Multiplayer Online Battle Arena) game where you play one of 155 champions and work together with your team to destroy the enemy's base. As my friends and I are new the to the game I thought I would take a look at some of the data the api makes available in order to help understand the game better. First up is making sense of the base statistics and categories of the champions. (If you want to follow along I have a jupyter notebook on my github you can use).
 
 ## Data Exploration
 
-In general each champion has their health (hp), their magic resource (mana/mp), armour, chance for critical hits (crit), attack damage, attack speed, all of which have a partner stat for the amount they increase each time the character levels up. Additionally there is move speed and attack range which remain constant as the characters level.![League of Legends Champion Stat Histogram](/uploads/histogram.png "Champion Stat Histogram")
+In general each champion has their health (hp), their magic resource (mana/mp), armour, chance for critical hits (crit), attack damage, and attack speed. All of these parameters have a partner stat for the amount they increase each time the character levels up. Additionally there is move speed and attack range which remain constant as the characters level.![League of Legends Champion Stat Histogram](/uploads/histogram.png "Champion Stat Histogram")
 
-As we can see from the histogram of each of the basic stats for all the champions, they generally follow a normal distribution, but as we will see, a game with this many characters there are many the buck any general rules.
+As we can see from the histogram of each of the basic stats for all the champions, they generally follow a normal distribution, but a game with this many characters has several outliers that eschew any general rules.
 
-League of Legends has 6 classes that can be used to identify differences in the champions. Mage, Support, Marksman, Fighter, Tank, Assassin. My assumption as a new player is that Tank's would have the highest hp and armour values and they would gain the most in these stats as they level.
+League of Legends uses 6 classes to identify different champions. Mage, Support, Marksman, Fighter, Tank, Assassin. My assumption as a new player is that Tank's would have the highest hp and armour values and they would gain the most in these stats as they level.
 
 ![](/uploads/hp-and-armour-lvl-1.png)
 
