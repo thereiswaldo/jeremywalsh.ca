@@ -15,6 +15,10 @@ As we can see from the histogram of each of the basic stats for all the champion
 
 League of Legends uses 6 classes to identify different champions. Mage, Support, Marksman, Fighter, Tank, Assassin. My assumption as a new player is that Tank's would have the highest hp and armour values and they would gain the most in these stats as they level.
 
+![](/uploads/hp-and-armour-lvl-1.png)
+
+![](/uploads/hp-and-armour-lvl-18.png)
+
 Plotting the hp and armour at level 1 and the max level 18 for each primary class doesn't totally validate this theory. It is important to note that I'm only using their primary class. 116 of the 154 champions have a secondary class listed that we are ignoring here for simplicity. Due to the complexity of the game our goal isn't to fully understand every detail of the champions, just enough that at a glance I can look at a champion with Tank as a Primary Class and safely assume they will have one of the highest hp and armour in the game. One way of doing this is looking at the effective hp:
 
 ![](/uploads/average-effective-hp-by-primary-class.png)
