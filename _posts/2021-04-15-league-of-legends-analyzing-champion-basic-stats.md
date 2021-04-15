@@ -1,7 +1,7 @@
 ---
 layout: single
 title: League of Legends - Analyzing Champion Base Stats
-date: 2021-03-25T04:00:00.000+00:00
+date: 2021-04-15
 categories: ''
 
 ---
@@ -45,10 +45,10 @@ We can see from the confusion matrix of our logistic regression test results tha
 
     #Print the accuracy score of the logistic regression
     print('Accuracy Score:', round(accuracy_score(y_test, preds),4)*100, '%')  
-    
+
     #Create classification report
     class_report=classification_report(y_test, preds)
-    print(class_report)	
+    print(class_report)
 
 ![](/uploads/classification-report.png)
 
