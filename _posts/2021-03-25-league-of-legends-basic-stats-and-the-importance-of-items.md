@@ -39,6 +39,8 @@ Since the base stats so far seem to do a good job classifying each character, I 
 
 Though the data is mostly ready for immediate analysis, one of the columns (partype) is categorical and tells us what resource, if any, the champion uses for it's abilities. Most champions use mana, but others may use things like energy or fury. To do this we used one-hot encoding to convert these strings to zeroes and ones that we could use in our logistic regression.
 
+![](/uploads/class-prediction-confusion-matrix-heatmap.png)
+
 We can see from the confusion matrix of our logistic regression test results that we do a decent job predicting the Fighters, Mages, Marksmen and Supports, but haven't figured out Assassins and Tanks. If we were 100% accurate with this model we would see zeroes in every cell except for the main diagonal. Printing out the accuracy score we get 66%, and the following classification report.
 
     #Print the accuracy score of the logistic regression
