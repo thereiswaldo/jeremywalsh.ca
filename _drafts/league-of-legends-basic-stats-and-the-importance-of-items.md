@@ -29,29 +29,17 @@ Put simply, effective health is the amount of raw burst physical or magical dama
 
 How hard champions are to kill is interesting, but more exciting is how damage they do. We have attack damage and attack speed in the dataset, and when multiply them together we get damage per second. That is the damage per second the champion deals using only it's right-click auto-attack at level 1. We can colour the average damage per second by also showing the average attack range for each class.
 
-The classes then seem like an easy first pass to telling us how survivable a champion will be. Tanks take more damage to kill, and mages less. What if we wanted to group the champions by something other than their class?
+![](/uploads/dps-and-range-by-primary-class.png)We can see a clear divide here between what appear to be on average melee classes (Fighter, Tank, Assassin) and range classes (Marksman, Mage, Support). The melee classes dish out a higher damage per second (dps), but they can't do so from a safe distance like their counterparts.
 
-## Principle Component Analysis
-
-We could use a Principle Component Analysis (PCA) and see what groups of champions appear. PCA is used here to extract the most important features in the dataset and boil them down to just 2 general parameters. For a detailed explanation of PCA I would [highly recommed this youtube video.](https://www.youtube.com/watch?v=fkf4IBRSeEc)
-
-![](/uploads/champion-stat-principle-component-analysis.png)
-
-We can see 3 somewhat distinct gropus here. I don't know enough of the champions at a glance to understand what the groupings are so we want to look at what features were important in getting us here. If we plot the relative importance of each feature on the graph we get this graph:
-
-![](/uploads/feature-importance-principle-component-analysis.png)
-
-It seems the three groups are at the top right, champions that don't use mana, at the bottom middle melee champions that use mana, and the left grouping being mana using ranged champions.
-
-In the dataset from the API a feature called partype is used to identify if a champion uses mana or some other type of ability (like energy). For this analysis I took that categorical data and used one-hot encoding to be able work with it. When trying to group champions it looks like whether or not they use mana is important.
+With this first pass over the data, it seems the base stats do a decent job telling a story of what the champion will be capable of. Tanks and Fighters are melee classes that take more damage to kill versus Mages that do good damage from range, but have a lower effective hp. 
 
 ## Logistic Regression
 
-Since the base stats so far seem to do a good job classifying each character, I wanted to see how accurately we could classify each champion using only their base statistics. To do this we'll take 70% of champions with all the features we've used so far, and train a logistic regression model. After training we can take the randomly assigned 30% of champions we didn't train on, and apply our logistic regression model to see how accurately we can classify champions based only on their base stats.
+Since the base stats so far seem to do a good job classifying each character, I wanted to see how accurately we could classify each champion using only their base statistics. To do this we'll take 70% of champions with all the features we've used so far, and train a logistic regression model. In the training process each champions stats are compared and the stats that most readily predict their class are given a high weight. After training we can take the randomly assigned 30% of champions we didn't train on, and apply these weights from our logistic regression model to see how accurately we can classify champions based only on their base stats.
 
-![](/uploads/class-prediction-confusion-matrix-heatmap.png "Logistic Regression Confusion Matrix")
+Though the data is mostly ready for immediate analysis, one of the columns (partype) is categorical and tells us what resource, if any, the champion uses for it's abilities. Most champions use mana, but others may use things like energy or fury. To do this we used one-hot encoding to convert these strings to zeroes and ones that we could use in our logistic regression.![](/uploads/class-prediction-confusion-matrix-heatmap.png "Logistic Regression Confusion Matrix")
 
-We can see from the confusion matrix that we do an decent job predicting the Fighters, Mages, Marksmen and Supports, but haven't figured out Assassins and Tanks. If we were 100% accurate with this model we would see zeroes in every cell except for the main diagonal. Printing out the accuracy score we get 65.96%, and the following classification report.
+We can see from the confusion matrix of our logistic regression test results that we do a decent job predicting the Fighters, Mages, Marksmen and Supports, but haven't figured out Assassins and Tanks. If we were 100% accurate with this model we would see zeroes in every cell except for the main diagonal. Printing out the accuracy score we get 66%, and the following classification report.
 
     #Print the accuracy score of the logistic regression
     print('Accuracy Score:', round(accuracy_score(y_test, preds),4)*100, '%')  
@@ -62,6 +50,24 @@ We can see from the confusion matrix that we do an decent job predicting the Fig
 
 ![](/uploads/classification-report.png)
 
-Like we saw from the confusion matrix, we can predict a few classes with good precision and recall, but on average we just aren't there with this method. One of the advantages of using a logistic regression classifier is it's interpretability, but with this low of accuracy it doesn't tell us much. Without going into details the takeaway is that Marksmen and Mages have distinctive base stats, where Assassins and Tanks vary heavily.
+Like we saw from the confusion matrix, we can predict a few classes with good precision and recall, but on average we just aren't there with this method. One of the advantages of using a logistic regression classifier is it's interpretability, but with this low of accuracy it doesn't tell us much. Without going into details the takeaway is that Marksmen and Mages have distinctive base stats (attack range, mana, hp), where Assassins and Tanks vary heavily. This is partially due to the high variety amongst the champions, the huge impact abilities/spells have on the game, and that most champions also have a secondary class. 
 
-Since base stats don't provide us enough information my next post is going to look at how each player can customize their champion with items in game, and the underlying importance of gold in the game.
+If the classes themselves aren't always the best at-a-glance indicator of what a champion might perform like, what other method could we use to get this?
+
+## Principle Component Analysis
+
+We could use a Principle Component Analysis (PCA) and see what groups of champions appear. For a detailed explanation of PCA I would [highly recommend this youtube video.](https://www.youtube.com/watch?v=fkf4IBRSeEc) PCA is used here to extract the most important features in the dataset and boil them down to just 2 general parameters. 
+
+![](/uploads/champion-stat-principle-component-analysis.png)
+
+We can see 3 somewhat distinct groups here. I don't know enough of the champions to understand what the groupings are so we want to look at what features were important in getting us here. If we plot the relative importance of each feature on the graph we get this graph:
+
+![](/uploads/feature-importance-principle-component-analysis.png)
+
+It seems the simplest explanation for the groups are that those in the top right don't use mana, the bottom middle are melee champions that use mana, and the left champions are mana using ranged champions.
+
+When trying to group champions it looks like whether or not they use mana is important. From my limited experience the mana-users all follow similar rulesets for their abilities/spells while the non-mana users can be very different. 
+
+## Next Steps
+
+Since base stats only provide us a glimpse at what each champion is capable of, my next post is going to look at how each player can customize their champion with items in game, and the underlying importance of gold.
