@@ -1,6 +1,6 @@
 ---
 layout: single
-title: League of Legends - Analyzing Champion Basic Stats
+title: League of Legends - Analyzing Champion Base Stats
 date: 2021-03-25T04:00:00.000+00:00
 categories: LoL_BaseStats
 
