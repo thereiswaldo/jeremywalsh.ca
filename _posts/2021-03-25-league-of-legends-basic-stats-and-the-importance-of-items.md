@@ -1,8 +1,8 @@
 ---
 layout: single
 title: League of Legends - Analyzing Champion Basic Stats
-date: 2021-03-25 04:00:00 +0000
-categories: Leauge of Legends, LoL, Data Visualization
+date: 2021-03-25T04:00:00.000+00:00
+categories: LoL_BaseStats
 
 ---
 My friends and I recently started playing League of Legends. It's a 5v5 MOBA (Multiplayer Online Battle Arena) game where you play one of 155 champions and work together with your team to destroy the enemy's base. As my friends and I are new the to the game I thought I would take a look at some of the data the api makes available in order to help understand the game better. First up is making sense of the base statistics and categories of the champions. (If you want to follow along I have a[ jupyter notebook on my github you can use](https://github.com/thereiswaldo/LoL-Champ-Analysis)).
