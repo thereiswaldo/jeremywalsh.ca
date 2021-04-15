@@ -1,8 +1,17 @@
 - layout: left
+  company: Lead Researcher
+  link: https://www.suezwatertechnologies.com/
+  job_title: SUEZ Water Technologies and Solutions
+  dates: April 2021 - present
+  # quote: >
+  #  Short description of the company (optional)
+  description: >
+    Developing hybrid data-driven and mechanistic models for water treatment plant analysis and simulation. Designing optimal control methods for complex systems. Applying machine learning techniques to forecast water system performance and detect important events.
+- layout: left
   company: Process Engineer
   link: https://www.suezwatertechnologies.com/
   job_title: SUEZ Water Technologies and Solutions
-  dates: August 2018 - present
+  dates: August 2018 - April 2021
   # quote: >
   #  Short description of the company (optional)
   description: >

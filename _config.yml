@@ -62,16 +62,16 @@ footer:
       url: "https://github.com/thereiswaldo"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/jeremy-walsh"
+      url: "https://www.linkedin.com/in/jeremy-walsh/"
 
 #resume attempt
 # About Section
 about_title: About Me
 about_profile_image: /assets/images/headshot.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I'm an engineer with applying data science to water treatment and sports analytics.
+  I'm an engineer who enjoys applying data science to water treatment and sports analytics.
   I have an Bachelor's of Engineering Physics from McMaster University and 8 years experience in engineering roles at SUEZ Water Technologies and Solutions (formerly GE Water).
-  I enjoy playing sports and games, and spending time with my newborn and wife.
+  I enjoy playing sports and spending time with my newborn and wife.
 
 content:
   - title: Projects # Title for the section
