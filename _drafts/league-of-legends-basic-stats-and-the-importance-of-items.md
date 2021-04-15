@@ -5,7 +5,7 @@ date: 2021-03-25 04:00:00 +0000
 categories: Leauge of Legends, LoL, Data Visualization
 
 ---
-My friends and I recently started playing League of Legends. It's a 5v5 MOBA (Multiplayer Online Battle Arena) game where you play one of 155 champions and work together with your team to destroy the enemy's base. As my friends and I are new the to the game I thought I would take a look at some of the data the api makes available in order to help understand the game better. First up is making sense of the base statistics and categories of the champions. (If you want to follow along I have a jupyter notebook on my github you can use).
+My friends and I recently started playing League of Legends. It's a 5v5 MOBA (Multiplayer Online Battle Arena) game where you play one of 155 champions and work together with your team to destroy the enemy's base. As my friends and I are new the to the game I thought I would take a look at some of the data the api makes available in order to help understand the game better. First up is making sense of the base statistics and categories of the champions. (If you want to follow along I have a[ jupyter notebook on my github you can use](https://github.com/thereiswaldo/LoL-Champ-Analysis)).
 
 ## Data Understanding and Exploration
 
@@ -31,7 +31,7 @@ How hard champions are to kill is interesting, but more exciting is how damage t
 
 ![](/uploads/dps-and-range-by-primary-class.png)We can see a clear divide here between what appear to be on average melee classes (Fighter, Tank, Assassin) and range classes (Marksman, Mage, Support). The melee classes dish out a higher damage per second (dps), but they can't do so from a safe distance like their counterparts.
 
-With this first pass over the data, it seems the base stats do a decent job telling a story of what the champion will be capable of. Tanks and Fighters are melee classes that take more damage to kill versus Mages that do good damage from range, but have a lower effective hp. 
+With this first pass over the data, it seems the base stats do a decent job telling a story of what the champion will be capable of. Tanks and Fighters are melee classes that take more damage to kill versus Mages that do good damage from range, but have a lower effective hp.
 
 ## Logistic Regression
 
@@ -50,13 +50,13 @@ We can see from the confusion matrix of our logistic regression test results tha
 
 ![](/uploads/classification-report.png)
 
-Like we saw from the confusion matrix, we can predict a few classes with good precision and recall, but on average we just aren't there with this method. One of the advantages of using a logistic regression classifier is it's interpretability, but with this low of accuracy it doesn't tell us much. Without going into details the takeaway is that Marksmen and Mages have distinctive base stats (attack range, mana, hp), where Assassins and Tanks vary heavily. This is partially due to the high variety amongst the champions, the huge impact abilities/spells have on the game, and that most champions also have a secondary class. 
+Like we saw from the confusion matrix, we can predict a few classes with good precision and recall, but on average we just aren't there with this method. One of the advantages of using a logistic regression classifier is it's interpretability, but with this low of accuracy it doesn't tell us much. Without going into details the takeaway is that Marksmen and Mages have distinctive base stats (attack range, mana, hp), where Assassins and Tanks vary heavily. This is partially due to the high variety amongst the champions, the huge impact abilities/spells have on the game, and that most champions also have a secondary class.
 
 If the classes themselves aren't always the best at-a-glance indicator of what a champion might perform like, what other method could we use to get this?
 
 ## Principle Component Analysis
 
-We could use a Principle Component Analysis (PCA) and see what groups of champions appear. For a detailed explanation of PCA I would [highly recommend this youtube video.](https://www.youtube.com/watch?v=fkf4IBRSeEc) PCA is used here to extract the most important features in the dataset and boil them down to just 2 general parameters. 
+We could use a Principle Component Analysis (PCA) and see what groups of champions appear. For a detailed explanation of PCA I would [highly recommend this youtube video.](https://www.youtube.com/watch?v=fkf4IBRSeEc) PCA is used here to extract the most important features in the dataset and boil them down to just 2 general parameters.
 
 ![](/uploads/champion-stat-principle-component-analysis.png)
 
@@ -66,7 +66,7 @@ We can see 3 somewhat distinct groups here. I don't know enough of the champions
 
 It seems the simplest explanation for the groups are that those in the top right don't use mana, the bottom middle are melee champions that use mana, and the left champions are mana using ranged champions.
 
-When trying to group champions it looks like whether or not they use mana is important. From my limited experience the mana-users all follow similar rulesets for their abilities/spells while the non-mana users can be very different. 
+When trying to group champions it looks like whether or not they use mana is important. From my limited experience the mana-users all follow similar rulesets for their abilities/spells while the non-mana users can be very different.
 
 ## Next Steps
 
