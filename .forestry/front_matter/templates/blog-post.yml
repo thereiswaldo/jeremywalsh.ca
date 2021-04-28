@@ -15,4 +15,4 @@ fields:
   name: categories
   label: categories
 pages:
-- _posts/2021-03-25-league-of-legends-basic-stats-and-the-importance-of-items.md
+- _posts/regression-analysis-for-items-and-gold-in-league-of-legends.md
