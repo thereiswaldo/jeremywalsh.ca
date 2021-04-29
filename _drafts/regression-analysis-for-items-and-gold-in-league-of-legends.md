@@ -13,7 +13,7 @@ As discussed in my [previous post,](http://jeremywalsh.ca/2021/04/15/league-of-l
 
 ![LoL Tank Level 3 HP Pie Chart](/uploads/tank-build-level-3-hp.png "Tank Champion First Item HP Breakdown")
 
-17% of their HP just from a relatively cheap item. Certainly a noticeable increase, and one that could alone have significant impact on the next few minutes of game play. 
+17% of their HP just from a relatively cheap item. Certainly a noticeable increase, and one that could alone have significant impact on the next few minutes of game play.
 
 As the game progresses, gold is accumulated and so are levels. At the end of long enough game we can look at what the average level capped (18) tank's HP is alongside a full item build. League of Legends allows you to equip 6 items, one of them is typically a pair of boots to increase move speed, so we will consider 5 typically purchased items and look at the breakdown again.
 
