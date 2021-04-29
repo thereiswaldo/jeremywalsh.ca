@@ -57,7 +57,15 @@ If m<sub>1</sub>x<sub>1</sub> is larger than m<sub>2</sub>x<sub>2</sub>, it will
 
 ![](/uploads/kills-per-minute-importance-boxplot.png)
 
-With this simple visualization we can see that the most important feature here in predicting the number of kills in the game is the early game gold. The box of feature extends to the Q1 and Q3 quartile values of the data with a line in between for the median. The "whiskers" further show the range of the data by extending out to the farthest data point within 1.5*(Q3-Q1). The dots seen above and below the whiskers are outliers.
+The box of feature extends to the Q1 and Q3 quartile values of the data with a line in between for the median. The "whiskers" further show the range of the data by extending out to the farthest data point within 1.5*(Q3-Q1). The dots seen above and below the whiskers are outliers.
+
+With this simple visualization we can see that the most important feature here in predicting the number of kills in the game is the early game gold. The gold per minute for the 0-10 minute interval has a much higher absolute value than anything else. This backs up our snowball item theory. The gold generated in the early game can be used for large buffs to kill the opponent. 
+
+If we repeat the same regression for the deaths per minute of the game we see a more convoluted result.
+
+![](/uploads/deaths-per-minute-importance-boxplot.png)
+
+Here we see that having more gold and more experience in the first 10 minutes leads to fewer deaths, but doing more damage results in more deaths.
 
 * correlation plot
   * the high damage leads to high deaths shows here as well that early gold and early damage are not correlated. Skirmishing opponents in the early game hurts more than it helps. likely do to dieing unnecessarily when you could be bringin in more gold.
