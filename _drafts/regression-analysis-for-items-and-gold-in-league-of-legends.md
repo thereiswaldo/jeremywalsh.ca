@@ -59,16 +59,21 @@ If m<sub>1</sub>x<sub>1</sub> is larger than m<sub>2</sub>x<sub>2</sub>, it will
 
 The box of feature extends to the Q1 and Q3 quartile values of the data with a line in between for the median. The "whiskers" further show the range of the data by extending out to the farthest data point within 1.5*(Q3-Q1). The dots seen above and below the whiskers are outliers.
 
-With this simple visualization we can see that the most important feature here in predicting the number of kills in the game is the early game gold. The gold per minute for the 0-10 minute interval has a much higher absolute value than anything else. This backs up our snowball item theory. The gold generated in the early game can be used for large buffs to kill the opponent. 
+With this simple visualization we can see that the most important feature here in predicting the number of kills in the game is the early game gold. The gold per minute for the 0-10 minute interval has a much higher absolute value than anything else. This backs up our snowball item theory. The gold generated in the early game can be used for large buffs to kill the opponent.
 
 If we repeat the same regression for the deaths per minute of the game we see a more convoluted result.
 
 ![](/uploads/deaths-per-minute-importance-boxplot.png)
 
-Here we see that having more gold and more experience in the first 10 minutes leads to fewer deaths, but doing more damage results in more deaths.
+Here we see that having more gold and more experience in the first 10 minutes leads to fewer deaths, but doing more damage results in more deaths. This is further backed up by looking at he correlation heatmap for the features across the whole dataset. 
 
-* correlation plot
-  * the high damage leads to high deaths shows here as well that early gold and early damage are not correlated. Skirmishing opponents in the early game hurts more than it helps. likely do to dieing unnecessarily when you could be bringin in more gold.
+![](/uploads/feature-correlation.png)
+
+The high damage leads to high deaths shows here as well that early gold and early damage are not correlated. Skirmishing opponents in the early game hurts more than it helps. Likely do to dying unnecessarily when you could be bringing in more gold.
+
+The role and lane features have some interesting patterns, but since they aren't as significant I'll avoid discussing them here.
+
+Returning to the reason we trained on only 80% of the data, we can use the other 20% to get a gauge of how well these models generalize. If the trained features don't have a high accuracy on the test dataset then they may not be good indicators for us to learn from. The training accuracy score (R<sup>2</sup>) for the Kills per Minute was 59% while the test accuracy score was 51%.
 
 There is some data leakage in this model that makes early gold a
 
