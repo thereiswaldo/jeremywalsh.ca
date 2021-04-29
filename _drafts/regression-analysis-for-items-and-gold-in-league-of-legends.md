@@ -49,11 +49,15 @@ XP \~ "Experience", which is gained from [numerous things](https://leagueoflegen
 
 To improve our model accuracy and give us more information I've also added the role and lane that the API classified for each champion. With these categorical entries I used one-hot encoding to analyze them. Due to the unnatural tactics of new players, the game struggles to classify in some instances and classifies the Lane as None. For the Jungle lane a Role is not identified and instead left as None.
 
-With our dataset now ready I randomly pulled out 20% of the champions across all the games and trained a linear regression on the other 80%. To allow for easy interpretation I take the trained coefficients from the regression and multiply them by the values in their respective column of the dataset. This is a way to show the importance of each feature. Since this is a linear regression model, we can interpret the higher absolute value as having a large impact on determining the goal feature. Imagine we had just two features, we could write the regression as
+With our dataset now ready I randomly pulled out 20% of the champions across all the games and trained a linear regression on the other 80%. To allow for easy interpretation I take the trained coefficients from the regression and multiply them by the values in their respective column of the dataset. This is a way to show the importance of each feature. Since this is a linear regression model, we can interpret the higher absolute value as having a large impact on determining the goal feature. Imagine we had just two features, we could write the regression as:
 
-y = m<sub>1</sub>x<sub>1</sub> + m<sub>2</sub>x<sub>1</sub>  + c
+y = m<sub>1</sub>x<sub>1</sub> + m<sub>2</sub>x<sub>2</sub>  + c
 
-    y = m<sub>1</sub>x<sub>1</sub> + m<sub>2</sub>x<sub>1</sub>  + c
+If m<sub>1</sub>x<sub>1</sub> is larger than m<sub>2</sub>x<sub>2</sub>, it will have a larger impact on y. To scale this up for our our purposes we consider 14 features instead of two, and allow x to represent the array of 256 entries of that feature in the training set. To visualize this we take the resulting dataframe and make a boxplot.
+
+![](/uploads/kills-per-minute-importance-boxplot.png)
+
+With this simple visualization we can see that the most important feature here in predicting the number of kills in the game is the early game gold. The box of feature extends to the Q1 and Q3 quartile values of the data with a line in between for the median. The "whiskers" further show the range of the data by extending out to the farthest data point within 1.5*(Q3-Q1). The dots seen above and below the whiskers are outliers.
 
 * correlation plot
   * the high damage leads to high deaths shows here as well that early gold and early damage are not correlated. Skirmishing opponents in the early game hurts more than it helps. likely do to dieing unnecessarily when you could be bringin in more gold.
