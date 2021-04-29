@@ -23,4 +23,12 @@ We can see nearly half of the average level 18 tank's HP is now coming directly 
 
 If we look at the attack damage that Marksman class does we can see a similar trend of importance of items.
 
-As a player you gain gold for killing enemy creeps, champions, buildings, or neutral monsters. There is also a mechanism for passive gold generation and assisting in kills.
+![LoL Marksman Level 3 Attack Damage Pie Chart](/uploads/marksman-build-level-3.png "Marksman Champion Level 3 Attack Damage Breakdown")
+
+![LoL Marksman Level 18 Attack Damage Pie Chart](/uploads/marksman-build-level-18.png "Marksman Champion Level 18 Attack Damage Breakdown")
+
+The max level Marksman build attack damage is 68% contributed to by items. Ignoring the other effects these weapons do, the stat boost from items is massive. A champion with more items is more powerful.
+
+Item's a re clearly an important part of a champion's stats, but the real question is how much they impact the game. To try to understand that we first need to understand how the items are purchased in game.
+
+As a player you gain gold for killing enemy creeps, champions, buildings, or neutral monsters. There is also a mechanism for passive gold generation and assisting in kills. This gold has the singular purpose of being used to buy items. 
