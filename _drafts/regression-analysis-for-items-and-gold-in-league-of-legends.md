@@ -73,7 +73,7 @@ The high damage leads to high deaths shows here as well that early gold and earl
 
 The role and lane features have some interesting patterns, but since they aren't as significant I'll avoid discussing them here.
 
-Returning to the reason we trained on only 80% of the data, we can use the other 20% to get a gauge of how well these models generalize. If the trained features don't have a high accuracy on the test dataset then they may not be good indicators for us to learn from. The training accuracy score (R<super>2</super>) for the Kills per Minute was 59% while the test accuracy score was 51%.
+Returning to the reason we trained on only 80% of the data, we can use the other 20% to get a gauge of how well these models generalize. If the trained features don't have a high accuracy on the test dataset then they may not be good indicators for us to learn from. The training accuracy score (R<sup>2</sup>) for the Kills per Minute was 59% while the test accuracy score was 51%.
 
 There is some data leakage in this model that makes early gold a
 
