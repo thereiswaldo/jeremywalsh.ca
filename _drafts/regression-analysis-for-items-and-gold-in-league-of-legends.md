@@ -47,9 +47,14 @@ Gold \~ Amount of gold gained from all sources, [more info here](https://leagueo
 
 XP \~ "Experience", which is gained from [numerous things](https://leagueoflegends.fandom.com/wiki/Experience_(champion)) and allows champions to level up at specific thresholds.
 
-To improve our model accuracy and give us more information I've also added the role and lane that the API classified for each champion. With these categorical entries I used one-hot encoding to analyze them. Due to the unnatural tactics of new players, the game struggles to classify in some instances and classifies the Lane or Role as None.
+To improve our model accuracy and give us more information I've also added the role and lane that the API classified for each champion. With these categorical entries I used one-hot encoding to analyze them. Due to the unnatural tactics of new players, the game struggles to classify in some instances and classifies the Lane as None. For the Jungle lane a Role is not identified and instead left as None.
 
-With our dataset now ready I randomly pulled out 20% of the champions across all the games and trained a linear regression on the other 80%. To allow for easy interpretation I take the trained coefficients from the regression and multiply them by the values in their respective column of the dataset. Since our 
+With our dataset now ready I randomly pulled out 20% of the champions across all the games and trained a linear regression on the other 80%. To allow for easy interpretation I take the trained coefficients from the regression and multiply them by the values in their respective column of the dataset. This is a way to show the importance of each feature. Since this is a linear regression model, we can interpret the higher absolute value as having a large impact on determining the goal feature. Imagine we had just two features, we could write the regression as
+
+    y=m1x1 + m2x2 + c
+
+* correlation plot
+  * the high damage leads to high deaths shows here as well that early gold and early damage are not correlated. Skirmishing opponents in the early game hurts more than it helps. likely do to dieing unnecessarily when you could be bringin in more gold.
 
 There is some data leakage in this model that makes early gold a
 
