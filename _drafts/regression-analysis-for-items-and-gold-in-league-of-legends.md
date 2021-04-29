@@ -29,6 +29,26 @@ If we look at the attack damage that Marksman class does we can see a similar tr
 
 The max level Marksman build attack damage is 68% contributed to by items. Ignoring the other effects these weapons do, the stat boost from items is massive. A champion with more items is more powerful.
 
-Item's a re clearly an important part of a champion's stats, but the real question is how much they impact the game. To try to understand that we first need to understand how the items are purchased in game.
+Item's are clearly an important part of a champion's stats, but the real question is how much they impact the game. To try to understand that we first need to understand how the items are purchased in game.
 
-As a player you gain gold for killing enemy creeps, champions, buildings, or neutral monsters. There is also a mechanism for passive gold generation and assisting in kills. This gold has the singular purpose of being used to buy items. 
+As a player you gain gold for killing enemy minions, champions, buildings, or neutral monsters. There is also a mechanism for passive gold generation and assisting in kills. This gold has the singular purpose of being used to buy items. This leads to a snowball effect in the game. The more minions killed in the early game, the more early game gold that can be spent on early stat-boosting items to help get more minion kills and eventually more champion and objective kills.
+
+## Regression Analysis
+
+Since I want to help my friends and I improve at the game I'm going to look at the data from each of our games, and see how predictive early game gold is in determining the features we care about. Namely damage output and champion kills. 
+
+I queried the Riot API for the 32 games I've played, and pulled out the relevant information the game captures. I took the amount of damage dealt and number of kills and divided them by the number of minutes the game took to get a comparable feature. The recorded data includes 4 features that aggregated for 10 minute intervals. We'll use the 0-10 minute interval as our early game indicator and the start of our gold-to-item snowball. The 4 features are:
+
+CS \~ Stands for "Creep Score", and is the measure of the number of enemy and neutral minions killed.
+
+Damage \~ Amount of damage dealt to minions, champions, buildings and objectives
+
+Gold \~ Amount of gold gained from all sources, [more info here](https://leagueoflegends.fandom.com/wiki/Gold)
+
+XP \~ "Experience", which is gained from [numerous things](https://leagueoflegends.fandom.com/wiki/Experience_(champion)) and allows champions to level up at specific thresholds.
+
+To improve our model accuracy and give us more information I've also added the role and lane that the API classified for each champion. With these categorical entries I used one-hot encoding to analyze them. Due to the unnatural tactics of new players, the game struggles to classify in some instances and classifies the Lane or Role as None.
+
+With our dataset now ready I randomly pulled out 20% of the champions across all the games and trained a linear regression on the other 80%. 
+
+There is some data leakage in this model that makes early gold a 
