@@ -51,7 +51,9 @@ To improve our model accuracy and give us more information I've also added the r
 
 With our dataset now ready I randomly pulled out 20% of the champions across all the games and trained a linear regression on the other 80%. To allow for easy interpretation I take the trained coefficients from the regression and multiply them by the values in their respective column of the dataset. This is a way to show the importance of each feature. Since this is a linear regression model, we can interpret the higher absolute value as having a large impact on determining the goal feature. Imagine we had just two features, we could write the regression as
 
-    y=m1x1 + m2x2 + c
+y = m<sub>1</sub>x<sub>1</sub> + m2x2 + c
+
+    y=m<sub>1</sub>x1 + m2x2 + c
 
 * correlation plot
   * the high damage leads to high deaths shows here as well that early gold and early damage are not correlated. Skirmishing opponents in the early game hurts more than it helps. likely do to dieing unnecessarily when you could be bringin in more gold.
