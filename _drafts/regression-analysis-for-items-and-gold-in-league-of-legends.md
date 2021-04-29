@@ -35,7 +35,7 @@ As a player you gain gold for killing enemy minions, champions, buildings, or ne
 
 ## Regression Analysis
 
-Since I want to help my friends and I improve at the game I'm going to look at the data from each of our games, and see how predictive early game gold is in determining the features we care about. Namely damage output and champion kills. 
+Since I want to help my friends and I improve at the game I'm going to look at the data from each of our games, and see how predictive early game gold is in determining the features we care about. Namely damage output and champion kills.
 
 I queried the Riot API for the 32 games I've played, and pulled out the relevant information the game captures. I took the amount of damage dealt and number of kills and divided them by the number of minutes the game took to get a comparable feature. The recorded data includes 4 features that aggregated for 10 minute intervals. We'll use the 0-10 minute interval as our early game indicator and the start of our gold-to-item snowball. The 4 features are:
 
@@ -49,6 +49,14 @@ XP \~ "Experience", which is gained from [numerous things](https://leagueoflegen
 
 To improve our model accuracy and give us more information I've also added the role and lane that the API classified for each champion. With these categorical entries I used one-hot encoding to analyze them. Due to the unnatural tactics of new players, the game struggles to classify in some instances and classifies the Lane or Role as None.
 
-With our dataset now ready I randomly pulled out 20% of the champions across all the games and trained a linear regression on the other 80%. 
+With our dataset now ready I randomly pulled out 20% of the champions across all the games and trained a linear regression on the other 80%. To allow for easy interpretation I take the trained coefficients from the regression and multiply them by the values in their respective column of the dataset. Since our 
 
-There is some data leakage in this model that makes early gold a 
+There is some data leakage in this model that makes early gold a
+
+Happy with the description here. like our previous analysis, the game is complicated so trying to tease out general themes will never have high accuracy.
+
+## Next Steps
+
+## Appendix: Bonus Analysis
+
+For interest I'll show how the model wors=ks on three other measures
