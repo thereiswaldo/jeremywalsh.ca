@@ -91,7 +91,7 @@ The training accuracy score (R<sup>2</sup>) for the Kills per Minute was 59% whi
 
 ![](/uploads/deathspredicted-vs-actual.png)
 
-These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us.
+These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us. If we look at the 
 
 * explain what htis means
 
