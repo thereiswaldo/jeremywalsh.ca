@@ -27,8 +27,7 @@ We can see nearly half of the average level 18 tank's HP is now coming directly 
 
 If we look at the attack damage that the Marksman class does we can see a similar trend of importance of items.
 
-![LoL Marksman Level 3 Attack Damage Pie Chart](/uploads/marksman-build-level-3.png "Marksman Champion Level 3 Attack Damage Breakdown")
-
+  
 ![LoL Marksman Level 18 Attack Damage Pie Chart](/uploads/marksman-build-level-18.png "Marksman Champion Level 18 Attack Damage Breakdown")
 
 68% of the attack damage the average max-level Marksman does can be from items. Ignoring the other effects these weapons do, the stat boost from items is massive. A champion with more items is more powerful.
@@ -87,7 +86,9 @@ Returning to the reason we trained on only 80% of the data, we can use the other
 
 The training accuracy score (R<sup>2</sup>) for the Kills per Minute was 59% while the test accuracy score was 51%. The Deaths per Minute were lower at 47% and 25% respectively.
 
-These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us. 
+![](/uploads/killspredicted-vs-actual.png)
+
+These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us.
 
 * explain what htis means
 
