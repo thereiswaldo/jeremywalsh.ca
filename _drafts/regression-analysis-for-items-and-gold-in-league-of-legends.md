@@ -87,11 +87,11 @@ Returning to the reason we trained on only 80% of the data, we can use the other
 
 The training accuracy score (R<sup>2</sup>) for the Kills per Minute was 59% while the test accuracy score was 51%. The Deaths per Minute were lower at 47% and 25% respectively.
 
-![](/uploads/killspredicted-vs-actual.png)
+![](/uploads/kills-predicted-vs-actual.png)
 
-![](/uploads/deathspredicted-vs-actual.png)
+![](/uploads/deaths-predicted-vs-actual.png)
 
-These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us. If we look at the 
+These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us. The graphs above show how the model predicts on the test data. If we look at the
 
 * explain what htis means
 
