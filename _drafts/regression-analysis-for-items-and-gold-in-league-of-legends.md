@@ -9,25 +9,31 @@ Continuing my analysis on League of Legends ([first post here](http://jeremywals
 
 ## How much do items improve base stats?
 
+### Tank
+
 As discussed in my [previous post,](http://jeremywalsh.ca/2021/04/15/league-of-legends-analyzing-champion-basic-stats.html) there are various classes each champion is typed into. The simplest that we will look at first is the Tank. They are generally designed to be your front liners that jump into battle first and absorb as much of the enemies damage as possible to save their squishy teammates. A few minutes into the game a tank might go back to the shop to buy some items. The cheapest item that provides health is called a Ruby Crystal. For 400 gold it boosts the owner's health (HP) by 150. If we take all the champions in the game that have Tank as their primary or secondary class and average their HP at level 3 plus this cheap item we get this breakdown:
 
 ![LoL Tank Level 3 HP Pie Chart](/uploads/tank-build-level-3-hp.png "Tank Champion First Item HP Breakdown")
 
 17% of their HP just from a relatively cheap item. Certainly a noticeable increase, and one that could alone have significant impact on the next few minutes of game play.
 
-As the game progresses, gold is accumulated and so are levels. At the end of long enough game we can look at what the average level capped (18) tank's HP is alongside a full item build. League of Legends allows you to equip 6 items, one of them is typically a pair of boots to increase move speed, so we will consider 5 typically purchased items and look at the breakdown again.
+As the game progresses, gold is accumulated and so are levels. At the end of a long game we can look at what the average level capped (18) tank's HP is alongside a full item build. League of Legends allows you to equip 6 items, one of them is typically a pair of boots to increase move speed, so we will consider 5 typically purchased items and look at the breakdown again.
 
 ![LoL Tank Level 18 HP Pie Chart](/uploads/tank-build-level-18-hp.png "Tank Champion Level 18 HP Breakdown")
 
-We can see nearly half of the average level 18 tank's HP is now coming directly from items. The Knight's Vow with it's 400 HP increase being the most significant in this build.
+We can see nearly half of the average level 18 tank's HP is now coming directly from items. The Knight's Vow with its 400 HP increase being the most significant in this build.
 
-If we look at the attack damage that Marksman class does we can see a similar trend of importance of items.
+### Marksman
+
+If we look at the attack damage that the Marksman class does we can see a similar trend of importance of items.
 
 ![LoL Marksman Level 3 Attack Damage Pie Chart](/uploads/marksman-build-level-3.png "Marksman Champion Level 3 Attack Damage Breakdown")
 
 ![LoL Marksman Level 18 Attack Damage Pie Chart](/uploads/marksman-build-level-18.png "Marksman Champion Level 18 Attack Damage Breakdown")
 
-The max level Marksman build attack damage is 68% contributed to by items. Ignoring the other effects these weapons do, the stat boost from items is massive. A champion with more items is more powerful.
+68% of the attack damage the average max-level Marksman does can be from items. Ignoring the other effects these weapons do, the stat boost from items is massive. A champion with more items is more powerful.
+
+### How to Acquire Items
 
 Item's are clearly an important part of a champion's stats, but the real question is how much they impact the game. To try to understand that we first need to understand how the items are purchased in game.
 
@@ -35,9 +41,11 @@ As a player you gain gold for killing enemy minions, champions, buildings, or ne
 
 ## Regression Analysis
 
-Since I want to help my friends and I improve at the game I'm going to look at the data from each of our games, and see how predictive early game gold is in determining the features we care about. Namely damage output and champion kills.
+Since I want to help my friends and I improve at the game I'm going to look at the data from each of our games, and see how predictive early game gold is in determining the features we care about. Namely champion kills and deaths.
 
-I queried the Riot API for the 32 games I've played, and pulled out the relevant information the game captures. I took the amount of damage dealt and number of kills and divided them by the number of minutes the game took to get a comparable feature. The recorded data includes 4 features that aggregated for 10 minute intervals. We'll use the 0-10 minute interval as our early game indicator and the start of our gold-to-item snowball. The 4 features are:
+### Data Mining and Cleaning
+
+I queried the Riot API for the 32 games I've played, and pulled out the relevant information the game captures. I took the amount of damage dealt and number of kills and divided them by the number of minutes the game took to get a comparable feature. The recorded data includes 4 features that aggregate over 10 minute intervals. We'll use the 0-10 minute interval as our early game indicator and the start of our gold-to-item snowball. The 4 features are:
 
 CS \~ Stands for "Creep Score", and is the measure of the number of enemy and neutral minions killed.
 
@@ -57,9 +65,9 @@ If m<sub>1</sub>x<sub>1</sub> is larger than m<sub>2</sub>x<sub>2</sub>, it will
 
 ![](/uploads/kills-per-minute-importance-boxplot.png)
 
-The box of feature extends to the Q1 and Q3 quartile values of the data with a line in between for the median. The "whiskers" further show the range of the data by extending out to the farthest data point within 1.5*(Q3-Q1). The dots seen above and below the whiskers are outliers.
+The box of each feature extends to the Q1 and Q3 quartile values of the data with a line in between for the median. The "whiskers" further show the range of the data by extending out to the farthest data point within 1.5*(Q3-Q1). The dots seen above and below the whiskers are outliers.
 
-With this simple visualization we can see that the most important feature here in predicting the number of kills in the game is the early game gold. The gold per minute for the 0-10 minute interval has a much higher absolute value than anything else. This backs up our snowball item theory. The gold generated in the early game can be used for large buffs to kill the opponent.
+With this simple visualization we can see that the most important feature here in predicting the number of kills is the early game gold. The gold per minute for the 0-10 minute interval has a much higher absolute value than anything else. This backs up our snowball item theory. The gold generated in the early game can be used for large item buffs to kill the opponent.
 
 If we repeat the same regression for the deaths per minute of the game we see a more convoluted result.
 
@@ -69,19 +77,25 @@ Here we see that having more gold and more experience in the first 10 minutes le
 
 ![](/uploads/feature-correlation.png)
 
-The high damage leads to high deaths shows here as well that early gold and early damage are not correlated. Skirmishing opponents in the early game hurts more than it helps. Likely do to dying unnecessarily when you could be bringing in more gold.
+The high early game damage leading to higher deaths is evident here as well that early gold an**d early damage are not correlated.** Skirmishing opponents in the early game hurts more than it helps. Likely do to dying unnecessarily when you could be bringing in more gold.
 
 The role and lane features have some interesting patterns, but since they aren't as significant I'll avoid discussing them here.
 
-Returning to the reason we trained on only 80% of the data, we can use the other 20% to get a gauge of how well these models generalize. If the trained features don't have a high accuracy on the test dataset then they may not be good indicators for us to learn from.
+## All models are wrong ...
+
+Returning to the reason we trained on only 80% of the data, we can use the other 20% to get a gauge of how well these models generalize. If the trained features don't have a high accuracy on the test dataset, then they may not be good indicators for us to learn from.
 
 The training accuracy score (R<sup>2</sup>) for the Kills per Minute was 59% while the test accuracy score was 51%. The Deaths per Minute were lower at 47% and 25% respectively.
+
+These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us. 
 
 * explain what htis means
 
 There is some data leakage in this model that makes early gold a
 
 Happy with the description here. like our previous analysis, the game is complicated so trying to tease out general themes will never have high accuracy.
+
+All models are
 
 ## Next Steps
 
