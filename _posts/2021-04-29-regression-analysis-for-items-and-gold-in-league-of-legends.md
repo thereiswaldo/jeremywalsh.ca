@@ -1,11 +1,13 @@
 ---
-layout: ''
+layout: single
 title: Regression Analysis for Items and Gold in League of Legends
-date: 2021-04-29 00:00:00 +0000
+date: 2021-05-09 00:00:00 +0000
 categories: ''
 
 ---
 Continuing my analysis on League of Legends ([first post here](http://jeremywalsh.ca/2021/04/15/league-of-legends-analyzing-champion-basic-stats.html)), I want to talk about items in the game. As a new player one of the things that I feel isn't well communicated is the importance of getting gold to build items. Items have many effects in the game, but here I'm going to focus on how they alter the base stats of the champions.
+
+If you want to follow along the code is posted ([here](https://github.com/thereiswaldo/LoL-Champ-Analysis/blob/main/LoL%20Items.ipynb)).
 
 ## How much do items improve base stats?
 
@@ -91,7 +93,7 @@ The training accuracy score (R<sup>2</sup>) for the Kills per Minute was 59% whi
 
 ![](/uploads/deaths-predicted-vs-actual.png)
 
-These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us. The graphs above show how the model predicts on the test data. The high R<sup>2</sup> shows as the data is dispersed far from the red diagonal line, but both reasonably follow the line. 
+These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us. The graphs above show how the model predicts on the test data. The high R<sup>2</sup> shows as the data is dispersed far from the red diagonal line, but both reasonably follow the line.
 
 ## ... but some are useful
 
@@ -99,4 +101,4 @@ What we actually care about is identifying patterns in the data. The parameters 
 
 # Next Steps
 
-The next thing I'm interested in looking at it for League of Legends is generating a new champion from the text and images of the current champions. If that is interesting enough I'll make my next post about it. 
+The next thing I'm interested in looking at it for League of Legends is generating a new champion from the text and images of the current champions. If that is interesting enough I'll make my next post about it.

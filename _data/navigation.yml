@@ -2,7 +2,7 @@
 main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
+  - title: "Resume"
     url: /resume.html
   - title: "Running Blog"
     url: http://jeremywalshsrunning.blogspot.com/
