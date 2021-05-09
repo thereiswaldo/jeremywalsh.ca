@@ -39,11 +39,11 @@ Item's are clearly an important part of a champion's stats, but the real questio
 
 As a player you gain gold for killing enemy minions, champions, buildings, or neutral monsters. There is also a mechanism for passive gold generation and assisting in kills. This gold has the singular purpose of being used to buy items. This leads to a snowball effect in the game. The more minions killed in the early game, the more early game gold that can be spent on early stat-boosting items to help get more minion kills and eventually more champion and objective kills.
 
-## Regression Analysis
+# Regression Analysis
 
 Since I want to help my friends and I improve at the game I'm going to look at the data from each of our games, and see how predictive early game gold is in determining the features we care about. Namely champion kills and deaths.
 
-### Data Mining and Cleaning
+## Data Mining and Cleaning
 
 I queried the Riot API for the 32 games I've played, and pulled out the relevant information the game captures. I took the amount of damage dealt and number of kills and divided them by the number of minutes the game took to get a comparable feature. The recorded data includes 4 features that aggregate over 10 minute intervals. We'll use the 0-10 minute interval as our early game indicator and the start of our gold-to-item snowball. The 4 features are:
 
@@ -77,7 +77,7 @@ Here we see that having more gold and more experience in the first 10 minutes le
 
 ![](/uploads/feature-correlation.png)
 
-The high early game damage leading to higher deaths is evident here as well that early gold an**d early damage are not correlated.** Skirmishing opponents in the early game hurts more than it helps. Likely do to dying unnecessarily when you could be bringing in more gold.
+The high early game damage leading to higher deaths is evident here as well showing that early gold and early damage are not correlated. Skirmishing opponents in the early game hurts more than it helps. Likely do to dying unnecessarily when you could be bringing in more gold.
 
 The role and lane features have some interesting patterns, but since they aren't as significant I'll avoid discussing them here.
 
@@ -91,18 +91,12 @@ The training accuracy score (R<sup>2</sup>) for the Kills per Minute was 59% whi
 
 ![](/uploads/deaths-predicted-vs-actual.png)
 
-These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us. The graphs above show how the model predicts on the test data. If we look at the
+These are poor indicators for goodness of fit, but since we are not using this model to make a highly accurate prediction, it doesn't matter that much to us. The graphs above show how the model predicts on the test data. The high R<sup>2</sup> shows as the data is dispersed far from the red diagonal line, but both reasonably follow the line. 
 
-* explain what htis means
+## ... but some are useful
 
-There is some data leakage in this model that makes early gold a
+What we actually care about is identifying patterns in the data. The parameters discussed above (gold/min etc.) are statistically significant in the regression model and the correlation matrix backs up the analysis we did. Though we shouldn't use this analysis to say that in another one of my games, having X gold per minute in the early game will net Y kills at the end of the game, we can still derive insights from the data.
 
-Happy with the description here. like our previous analysis, the game is complicated so trying to tease out general themes will never have high accuracy.
+# Next Steps
 
-All models are
-
-## Next Steps
-
-## Appendix: Bonus Analysis
-
-For interest I'll show how the model wors=ks on three other measures
+The next thing I'm interested in looking at it for League of Legends is generating a new champion from the text and images of the current champions. If that is interesting enough I'll make my next post about it. 
