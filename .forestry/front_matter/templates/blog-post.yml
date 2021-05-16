@@ -16,3 +16,4 @@ fields:
   label: categories
 pages:
 - _posts/2021-04-29-regression-analysis-for-items-and-gold-in-league-of-legends.md
+- _posts/predicting-canadian-university-cross-country-performances.md
