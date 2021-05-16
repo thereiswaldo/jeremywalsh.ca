@@ -35,6 +35,10 @@ some only do that last 3 races
  7. Regions are seperated by vast distances
  8. Injuries/sickness
  9. bad days
-10. weight and height of atheltes
-11. effort level and general coach strategy
-12. Data is gathered
+10. weight and height of atheltes, individuality
+
+Some run better over short, or hills etc.
+
+7. effort level and general coach strategy
+8. Data is gathered
+9. Prediction method
