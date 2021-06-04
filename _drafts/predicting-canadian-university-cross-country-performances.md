@@ -17,7 +17,7 @@ Each September to November (baring global pandemics), Canadian University Cross 
 
 ## Why is this worth doing?
 
-The first question in any data science project is what is the business problem? 
+This is usually a difficult question to ask of a data science project, but like everything I will post on this site, I find this problem fun and interesting.  
 
 * spectator
 * coaches
