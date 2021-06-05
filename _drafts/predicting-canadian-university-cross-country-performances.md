@@ -5,35 +5,35 @@ date:
 categories: ''
 
 ---
-A project of mine that keeps coming back to me is trying to predict USport/CIS Cross Country results. During my time at McMaster I competed on the cross country team and like many of the competitors, enjoyed guessing how the championship races would play out. Most of the predictions are made at the team level, guessing which university will win the team title, and how the other schools will finish. I was involved in many different predictions, but the one I spent the most time on was a [full individual prediction of every athlete](https://web.archive.org/web/20131105103135/http://www.trackie.com/track-and-field/Forum/cis-and-conference-individual-team-predictor/9714/1/ "CIS and Conference Individual Team Predictor"). The thought process was that in order to better predict each team's performance, I would look at how the individuals should perform against each other and then aggregate to the team level. This worked pretty well, but it relied on some guesswork and some broad assumptions.
+A project of mine that keeps coming back to me is predicting USport/CIS Cross Country results. During my time at McMaster University I competed on the cross country team and like many of my competitors, enjoyed guessing how the championship races would play out. Most of these predictions are made at the team level, guessing which university will win the team title, and how the other schools will finish. I was involved in many different predictions, but the one I spent the most time on was a [full individual prediction of every athlete](https://web.archive.org/web/20131105103135/http://www.trackie.com/track-and-field/Forum/cis-and-conference-individual-team-predictor/9714/1/ "CIS and Conference Individual Team Predictor"). The thought process was that in order to better predict each team's performance, I would look at how the individuals should perform against each other, build out a full simulated race, and then aggregate the individual results to the team level. This worked pretty well, but it relied on some guesswork and some broad assumptions.
 
 Seven years down the road, my data science skills have improved and I wanted to revisit this problem. Predicting cross country results are difficult for many reasons, but before we talk about the roadblocks in our way I'll give a brief overview on the relevant rules of the sport.
 
 ## What You Need To Know About Canadian Cross Country
 
-Each September to November (baring global pandemics), Canadian University Cross Country teams participate in meets culminating in a regional and then Canadian championships. Their strictly isn't anything preventing schools from competing in the championship meets, but most schools only send teams that meet some performance criteria. The placing for each team is determined by the score of the top five individuals. Seven runners are allowed to start in the championship meets, and the sixth and seventh runners are considered displacers. The score is based off of the overall place in the race, and the lowest total team score wins (further rules for scoring can be found [here](https://usports.ca/uploads/hq/Playing_Regs/2020-21/200721_Playing_Regulations_Cross_Country_%28W%26M%29_ENG.pdf)). The best possible score would be if one team takes the first 5 positions, resulting a score of 15 (1+2+3+4+5).
+Each September to November (baring global pandemics), Canadian University Cross Country teams participate in meets culminating in a regional and then Canadian championships (USports/CIS). There strictly isn't anything preventing schools from competing in the championship meets, but most schools only send teams that meet some performance criteria. The placing for each team is determined by the score of the top five individuals. Seven runners are allowed to start in the championship meets, and the sixth and seventh runners are considered displacers. The athlete's score is based off of the overall place in the race, and the lowest total team score wins (further rules for scoring can be found [here](https://usports.ca/uploads/hq/Playing_Regs/2020-21/200721_Playing_Regulations_Cross_Country_%28W%26M%29_ENG.pdf)). The best possible score would be if one team takes the first five positions, resulting a score of 15 (1+2+3+4+5).
 
 ![](/uploads/cis2012wxc.gif "CIS Women's XC Championship Start 2012")
 
 ## Why is this worth doing?
 
-This is usually a difficult question to ask of a data science project, but like everything I will post on this site, I find this problem fun and interesting.  More broadly though I do think this analysis has value in the running community.
+This is usually a difficult question to ask of any data science project, but like everything I will post on this site, I find this problem fun and interesting.  More broadly though I do think this analysis has value in the running community.
 
-The main reason that is currently motivating me to revisit this project is enhancing the spectator experience. I have family members that would come to my races in university, and they would tell me that having the "insider" knowledge I could provide them about who was expected to win, how our team should perform, and some backstory on some the favourites. For a sport that is not considered very spectator friendly, we should be doing everything we can to educate our fans in an effort to improve their enjoyment.
+The main reason that is currently motivating me to revisit this project is enhancing the spectator experience. I have family members that would come to my races in university, and they would tell me that having the "insider" knowledge I could provide them about who was expected to win, how our team should perform, and some backstory on the favourites greatly enhanced their viewing experience. For a sport that is not considered very spectator friendly, we should be doing everything we can to educate our fans in an effort to improve their engagement.
 
-Another benefit of doing these predictions are the aid they could provide to coaches and athletes. A prediction could be used to give athletes a goal pace to train and race at, as well as show them competitors they should plan to keep up with. Coaches could project how individuals would perform when considering who to enter in the meets, and could analyze the development of their athletes over the years.
+Another benefit of doing these predictions are the aid they could provide to coaches and athletes. A prediction for a race could be used to give athletes a goal pace to train and race at, as well as show them competitors they should plan to keep up with. Coaches could project how individuals would perform when considering who to enter in the meets, and could analyze the development of their athletes over the years.
 
 A potential side-benefit of this work is the results database that needs to be constructed. There currently isn't a good place to find Canadian cross country race results. There are websites that host PDF results, but there isn't an easy way to search those results for an athlete or team. Having one large database would be helpful for statistics and further analysis.
 
-## Difficulty in Predicting Places
+## Difficulty in Predicting Results
 
-For many reasons, predicting performances in cross country is very difficult. This is, in my opinion, one of the things that makes guessing how teams or even you individually will perform on any given day. The main difficulties I've come up with are detailed here.
+For many reasons, predicting performances in cross country is very difficult. This is, in my opinion, one of the things that makes guessing how teams or even athletes individually will perform on any given day. The main difficulties I've discovered are detailed here.
 
-* **Courses are all different**
+1. **Courses are all different**
 
 Each different course has its own elevation profile, number of turns, and terrain. One weekend a team might be climbing huge hills on muddy trails with many hairpin turns, and the next race could be a flat hard-packed grass loop. These factors have a huge impact on not just the average time, but some runners perform comparatively better on hills or in mud. To complicated further, courses can change from year-to-year.
 
-* **Race distances can vary**
+2. **Race distances can vary**
 
 Over the course of the season, races could be from 5km to 10km in length, and are not expected to be precise. The [current regulations](https://usports.ca/uploads/hq/Playing_Regs/2020-21/200721_Playing_Regulations_Cross_Country_%28W%26M%29_ENG.pdf "USports XC Regulations") for the national meet in USports require the length of the course to be within 25m of the 8000m nominal length. The early races in the season have no such requirement, so even the listed distance could be incorrect.
 
