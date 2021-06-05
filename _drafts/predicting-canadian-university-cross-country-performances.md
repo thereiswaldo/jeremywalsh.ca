@@ -21,7 +21,7 @@ This is usually a difficult question to ask of a data science project, but like 
 
 The main reason that is currently motivating me to revisit this project is enhancing the spectator experience. I have family members that would come to my races in university, and they would tell me that having the "insider" knowledge I could provide them about who was expected to win, how our team should perform, and some backstory on some the favourites. For a sport that is not considered very spectator friendly, we should be doing everything we can to educate our fans in an effort to improve their enjoyment.
 
-Another benefit of doing these predictions are the aid they could provide to coaches and athletes. A prediction could be used to give athletes a goal pace to train and race at, as well as show them competitors they should plan to keep up with. Coaches could project how individuals would perform when considering who to enter in the meets, and could analyze the development of their athletes over the years.  
+Another benefit of doing these predictions are the aid they could provide to coaches and athletes. A prediction could be used to give athletes a goal pace to train and race at, as well as show them competitors they should plan to keep up with. Coaches could project how individuals would perform when considering who to enter in the meets, and could analyze the development of their athletes over the years.
 
 A potential side-benefit of this work is the results database that needs to be constructed. There currently isn't a good place to find Canadian cross country race results. There are websites that host PDF results, but there isn't an easy way to search those results for an athlete or team. Having one large database would be helpful for statistics and further analysis.
 
@@ -77,7 +77,7 @@ The data itself is another hurdle. Most meets have a record of the performances 
 
 ## Prediction Evaluation
 
-When we reach the end of this blog series I want to be able to prove that I've built a good model. One of the evaluation metrics I would like to hit is outperforming the historical pundit prediction rate. I'll do a longer breakdown in a future post, but a quick scan of previous predictions from coach polls and community rankings 
+When we reach the end of this blog series I want to be able to prove that I've built a good model. One of the evaluation metrics I would like to hit is outperforming the historical pundit prediction rate. I'll do a longer breakdown in a future post, but a quick scan of previous predictions from coach polls and community rankings show that typically the
 
 * show average prediction as a metric for me to shoot for from my google doc. "I would consider it a success if we meet or exceed this rate on average ... "
 * Show how my results predicting 2012 or 2019 did in comparison
