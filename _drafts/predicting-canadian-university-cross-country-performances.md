@@ -77,10 +77,11 @@ The data itself is another hurdle. Most meets have a record of the performances 
 
 ## Prediction Evaluation
 
-When we reach the end of this blog series I want to be able to prove that I've built a good model. One of the evaluation metrics I would like to hit is outperforming the historical pundit prediction rate. I'll do a longer breakdown in a future post, but a quick scan of previous predictions from coach polls and community rankings show that typically the
+When we reach the end of this blog series I want to be able to prove that I've built a good model. One of the evaluation metrics I would like to hit is outperforming the historical pundit prediction rate. I'll do a longer breakdown in a future post, but a quick scan of previous predictions from coach polls and community rankings show that the team placings usually have a correlation coefficient of around 0.85. We can see this as the case for the 2019 USports Women's Coaches Poll below. Most of the predictions were close, but the coaches greatly overestimated the McGill team. 
 
-* show average prediction as a metric for me to shoot for from my google doc. "I would consider it a success if we meet or exceed this rate on average ... "
-* Show how my results predicting 2012 or 2019 did in comparison
+![](/uploads/2019-usports-women-s-cross-country-coaches-poll-accuracy.png "2019 USports Women's Cross Country Coaches Poll Accuracy")
+
+I would consider this project a success if the final model makes predictions at this accuracy or higher. 
 
 ## First Step - Course Analysis
 
