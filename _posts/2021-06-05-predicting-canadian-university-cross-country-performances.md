@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Predicting Canadian University Cross Country Performances
+title: Predicting Canadian University Cross Country Performances - Introduction
 date: 2021-06-05 04:00:00 +0000
 categories: ''
 
@@ -29,57 +29,57 @@ A potential side-benefit of this work is the results database that needs to be c
 
 For many reasons, predicting performances in cross country is very difficult. This is, in my opinion, one of the things that makes guessing how teams or even athletes individually will perform on any given day. The main difficulties I've discovered are detailed here.
 
-1. **Courses are all different**
+##### **1. Courses are all different**
 
 Each different course has its own elevation profile, number of turns, and terrain. One weekend a team might be climbing big hills on muddy trails with many hairpin turns, and the next race could be a flat hard-packed grass loop. These factors have a huge impact on not just the average time, but some runners perform comparatively better on hills or in mud. To complicate this further, courses can change from year-to-year.
 
-2. **Race distances vary**
+##### **2. Race distances vary**
 
 Over the course of the season, races could be from 5km to 10km in length, and are not expected to be precise. The [current regulations](https://usports.ca/uploads/hq/Playing_Regs/2020-21/200721_Playing_Regulations_Cross_Country_%28W%26M%29_ENG.pdf "USports XC Regulations") for the national meet in USports require the length of the course to be within 25m of the 8000m nominal length. The early races in the season have no such requirement, so even the listed distances could be incorrect.
 
 There are many online calculators for scaling running times from one distance to another (examples [1](), [2](https://runsmartproject.com/calculator/), [3](https://lukehumphreyrunning.com/hmmcalculator/race_equivalency_calculator.php)). They work well in the aggregate, but at the individual level, some athletes are better tuned to the shorter distances, while others are better long distance runners.
 
-3. **Weather**
+##### **3. Weather**
 
 As the races are done in the in the great outdoors of the Canadian fall, weather of all kinds impacts the runners. Extreme heat, cold, wind, rain, snow and sleet all have a unique effect on the course and the physiology of the runners.
 
-4. **Competitive level/number of runners**
+##### **4. Competitive level/number of runners**
 
 Some meets have very few teams participating while others can have more than 20. Having more runners in the field increases the competitiveness and provides more running  companions. Home meets and championships are often placed as a high priority, with coaches adjusting preparation to have optimal performance, while smaller meets might be used more for a workout.
 
-5. **Time in season**
+##### **5. Time in season**
 
-Though the season only lasts about 10 weeks, training plans have teams slowly improving throughout the season as they aim to perform their very best at the national championship in November. In other words, we'd expect the same athlete, on the same course, in the same weather, with the same competitors, to perform better on average in November than in September. 
+Though the season only lasts about 10 weeks, training plans have teams slowly improving throughout the season as they aim to perform their very best at the national championship in November. In other words, we'd expect the same athlete, on the same course, in the same weather, with the same competitors, to perform better on average in November than in September.
 
-6. **Events in a season**
+##### **6. Events in a season**
 
 Most teams compete about every two weeks. Typically they run three or four in-season races, then the regional meet, and finally the Canadian championship. Including the regional meet that is at best five data points we have for each runner.
 
-7. **Regions are separated by vast distances**
+##### **7. Regions are separated by vast distances**
 
 Canada is a big country and budgetary constraints mean most teams stay within their region. Eastern and western teams don't meet until nationals. With little head-to-head competition, it is difficult to compare performances.
 
-8. **Injuries and sickness**
+##### **8. Injuries and sickness**
 
 The combination of cool weather, start of a school year with interactions of hundreds of other students, the stress of school work, and heavy training load leave athletes ripe for injury and illness. Some athletes miss races, and others underperform.
 
-9. **Bad days**
+##### **9. Bad days**
 
 Similar, though not necessarily the same as injuries and sickness, are when athletes generally underperform. For tangible or intangible reasons, sometimes things just don't go according to plan.
 
-10. **Athlete Individuality**
+##### **10. Athlete Individuality**
 
-As I've alluded to, each athlete is unique. Though we may have records of athlete's height and weight, we can't directly measure their preference for long hilly races, or afternoon races instead of morning ones. 
+As I've alluded to, each athlete is unique. Though we may have records of athlete's height and weight, we can't directly measure their preference for long hilly races, or afternoon races instead of morning ones.
 
-11. **Athlete Age**
+##### **11. Athlete Age**
 
-University is often a period of dramatic athletic development. An athlete in their fifth year generally runs faster than they did in their first year. Most athletes are of the same age range, though PhD students can be significantly older. 
+University is often a period of dramatic athletic development. An athlete in their fifth year generally runs faster than they did in their first year. Most athletes are of the same age range, though PhD students can be significantly older.
 
-12. **Data**
+##### **12. Data**
 
 The data itself is another monumental hurdle in this process. Most meets have a record of the performances stored in a pdf, and most of those have been aggregated on trackie.ca. Unless they are from the same timing company, they come in varying formats, with varying degrees of information. Some may give splits, the weather, and age of the runners, but most just list the place, time, runner name and their team. Compiling every race in the history of Canadian university cross country may be impossible at this point, but even putting the last 10 years into a database is no easy feat.
 
-These issues are daunting, and at the very least, bad days will always show up as an error source in our model. That said, for years anecdotal predictions have been made, and are still relatively accurate. 
+These issues are daunting, and at the very least, bad days will always show up as an error source in our model. That said, for years anecdotal predictions have been made, and are still relatively accurate.
 
 ## Prediction Evaluation
 
