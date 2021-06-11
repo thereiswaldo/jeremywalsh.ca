@@ -1,6 +1,7 @@
 ---
 layout: single
-title: Predicting Canadian University Cross Country Performances - Introduction
+title: Predicting Canadian University Cross Country Performances - Introduction -
+  Introduction
 date: 2021-06-05 04:00:00 +0000
 categories: ''
 
