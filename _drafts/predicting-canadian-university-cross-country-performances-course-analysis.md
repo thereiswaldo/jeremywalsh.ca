@@ -7,8 +7,12 @@ categories: ''
 ---
 Before we can do detailed predictions for cross country races we need to build a dataset. This dataset is going to be primarily filled with the race results, but we also want to add other exogenous features to improve the accuracy of our model. This is because, as anyone who has run a race before could tell you, your name and the race distance alone aren't enough to accurately predict your finish time. Other factors like the weather and the time in season play a large impact on an individuals finish time. For this post I want to develop one such exogenous feature that I think will play a large role in our model, the race course.
 
-Cross country courses are all unique. Most in Canada are a series of loops over a hilly, grassy area. 
+Cross country courses are all unique. Most in Canada are a series of loops over a hilly, grassy area. The size and number of hills, and turns in the course are completely up to the race directors, and usually a function of what is available. 
+
+## insert two course profiles from tableau (satellite image, elevation profile)
 
 * elevation
+  * does strava explain it's elevation graded pacing?
 * turniness
-* 1m vectored directions, use for when get wind direction determine distance into the wind, distance tailwind, distance perpendicular to use for drag
+  * explain effect from looking at world records for indoor and outdoor of different distances. Look at how they change iwth distance (is it mostly speed based/forces on the body?)
+* 1m vectored directions, use for when get wind direction determine distance into the wind, distance tailwind, distance perpendicular to use for drag. Would eventually cross the wind direction and distance travelled in a drag formula. 
