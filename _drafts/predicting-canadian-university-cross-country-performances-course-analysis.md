@@ -7,7 +7,7 @@ categories: ''
 ---
 Before we can do detailed predictions for cross country races we need to build a dataset. This dataset is going to be primarily filled with the race results, but we also want to add other exogenous features to improve the accuracy of our model. This is because, as anyone who has run a race before could tell you, your name and the race distance alone aren't enough to accurately predict your finish time. Other factors like the weather and the time in season play a large impact on an individuals finish time. For this post I want to develop one such exogenous feature that I think will play a large role in our model, the race course.
 
-Cross country courses are all unique. Most in Canada are a series of loops over a hilly, grassy area. The size and number of hills, and turns in the course are completely up to the race directors, and usually a function of what is available. 
+Cross country courses are all unique. Most in Canada are a series of loops over a hilly, grassy area. The size and number of hills, and turns in the course are completely up to the race directors, and usually a function of what is available.
 
 #### insert two same distance course profiles from tableau (satellite image, elevation profile, course records, avg times, avg entrants)
 
@@ -15,17 +15,17 @@ In order for us to make accurate predictions we want to be able to compare diffe
 
 ## Elevation
 
-The simplest of the concepts to understand it's impact is elevation. Running uphill is difficult and slows runners, while running downhill is generally easier. The core reason for this is the simple physics that climbing a hill requires an investment of potential energy to overcome gravity (PE=mgh). Because human bodies aren't frictionless wheels, there isn't a simple relationship between hills and pace, particularly for downhills. 
+The simplest of the concepts to understand it's impact is elevation. Running uphill is difficult and slows runners, while running downhill is generally easier. The core reason for this is the simple physics that climbing a hill requires an investment of potential energy to overcome gravity (PE=mgh). Because human bodies aren't frictionless wheels, there isn't a simple relationship between hills and pace, particularly for downhills.
 
 The true relationship was first explored in a small study by [Minetti et al. (2002)](https://doi.org/10.1152/japplphysiol.01177.2001). The popular activity tracking app Strava looked at all of their data to develop a Grade Adjusted Pace (GAP) for their platform. The method to derive the current version of GAP calculation is detailed [in this blog post](https://medium.com/strava-engineering/an-improved-gap-model-8b07ae8886c3), and the plot they derived is shown here:
 
 ![](https://miro.medium.com/max/3088/1*_TwofsNS872wbUS12ykKPQ.png "Grade Adjusted Pace by Strava")
 
-There are other rules of thumbs posted online, but most follow this trend. 
+There are other rules of thumbs posted online, but most follow this trend.
 
 \~\~\~ we want to take the gradients from the races and apply this translation to see how there time should be affected
 
 * 
 * turniness
   * explain effect from looking at world records for indoor and outdoor of different distances. Look at how they change iwth distance (is it mostly speed based/forces on the body?)
-* 1m vectored directions, use for when get wind direction determine distance into the wind, distance tailwind, distance perpendicular to use for drag. Would eventually cross the wind direction and distance travelled in a drag formula. 
+* 1m vectored directions, use for when get wind direction determine distance into the wind, distance tailwind, distance perpendicular to use for drag. Would eventually cross the wind direction and distance travelled in a drag formula.
