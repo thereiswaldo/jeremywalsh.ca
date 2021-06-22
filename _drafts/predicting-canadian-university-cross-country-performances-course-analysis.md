@@ -21,7 +21,7 @@ The true relationship was first explored in a small study by [Minetti et al. (20
 
 ![](https://miro.medium.com/max/3088/1*_TwofsNS872wbUS12ykKPQ.png "Grade Adjusted Pace by Strava")
 
-There are other rules of thumbs posted online, but most follow this trend.
+There are other rules of thumbs posted online, but most follow this trend. To utilize this I first 
 
 \~\~\~ we want to take the gradients from the races and apply this translation to see how there time should be affected
 
