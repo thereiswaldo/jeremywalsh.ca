@@ -13,6 +13,8 @@ Cross country courses are all unique. Most in Canada are a series of loops over 
 
 In order for us to make accurate predictions we want to be able to compare different courses so we can translate a performance on one course to another. To do that we want to boil the measurable differences between the courses down to features that we can train our model on. We'll do this by analyzing the elevation profile, the number and amount of turns, and the heading throughout the course.
 
+## Course GPS Data
+
 ## Elevation
 
 The simplest of the concepts to understand it's impact is elevation. Running uphill is difficult and slows runners, while running downhill is generally easier. The core reason for this is the simple physics that climbing a hill requires an investment of potential energy to overcome gravity (PE=mgh). Because human bodies aren't frictionless wheels, there isn't a simple relationship between hills and pace, particularly for downhills.
@@ -21,7 +23,7 @@ The true relationship was first explored in a small study by [Minetti et al. (20
 
 ![](https://miro.medium.com/max/3088/1*_TwofsNS872wbUS12ykKPQ.png "Grade Adjusted Pace by Strava")
 
-There are other rules of thumbs posted online, but most follow this trend. To utilize this I first 
+There are other rules of thumbs posted online, but most follow this trend. The steeper the thill the slower the pace, with downhills being a little more complex. A very steep downhill puts a lot of stress on the body, and can be difficult to maintain pace. I'm expecting that the competitive athletes in these 5km-10km cross country races line up closer to the Minetti model on downhills, as the sample group for the Strava model likely utilized more recreational efforts where one may be more careful on a downhill. Either way I will utilize both models and see which fits the data better.
 
 \~\~\~ we want to take the gradients from the races and apply this translation to see how there time should be affected
 
