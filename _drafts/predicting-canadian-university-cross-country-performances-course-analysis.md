@@ -15,6 +15,8 @@ In order for us to make accurate predictions we want to be able to compare diffe
 
 ## Course GPS Data
 
+The basis for the course data is it's gps file. 
+
 ## Elevation
 
 The simplest of the concepts to understand it's impact is elevation. Running uphill is difficult and slows runners, while running downhill is generally easier. The core reason for this is the simple physics that climbing a hill requires an investment of potential energy to overcome gravity (PE=mgh). Because human bodies aren't frictionless wheels, there isn't a simple relationship between hills and pace, particularly for downhills.
