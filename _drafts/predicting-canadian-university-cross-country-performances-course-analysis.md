@@ -15,7 +15,9 @@ In order for us to make accurate predictions we want to be able to compare diffe
 
 ## Course GPS Data
 
-The basis for the course data is it's gps file. 
+The basis for the course data is it's gps file. Each course gps file contains latitude, longitude and elevation I've collected 21 courses (17 Canadian, 4 USA) in my current database from a mix of sources. Some are from gps recordings I've made, while others are pulled from online sources like Garmin Connect.
+
+[https://support.strava.com/hc/en-us/articles/216918447-Downloading-a-GPX-Route-from-other-Athlete-s-Activities](https://support.strava.com/hc/en-us/articles/216918447-Downloading-a-GPX-Route-from-other-Athlete-s-Activities "https://support.strava.com/hc/en-us/articles/216918447-Downloading-a-GPX-Route-from-other-Athlete-s-Activities")
 
 ## Elevation
 
