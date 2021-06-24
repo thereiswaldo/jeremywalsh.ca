@@ -15,9 +15,9 @@ In order for us to make accurate predictions we want to be able to compare diffe
 
 ## Course GPS Data
 
-The basis for the course data is it's gps file. Each course gps file contains latitude, longitude and elevation I've collected 21 courses (17 Canadian, 4 USA) in my current database from a mix of sources. Some are from gps recordings I've made, while others are pulled from online sources like Garmin Connect.
+The basis for the course data is it's gps file. Each course gps file contains latitude, longitude and elevation at each recorded point, while some also include the timestep. I've collected 21 courses (17 Canadian, 4 USA) in my current database from a mix of sources. Some are from gps recordings I've made, while others are pulled from Garmin Connect. Most of the data comes from other athlete's Strava recordings. As long as the athlete has a public profile, [we can download the gps file as a gpx](https://support.strava.com/hc/en-us/articles/216918447-Downloading-a-GPX-Route-from-other-Athlete-s-Activities). Finding the athletes that chose to wear a gps watch and post the results is a difficult process so I don't currently have all the courses Canadian teams compete on. If you have one I'm missing, please feel free to send the gpx file or Strava url.
 
-[https://support.strava.com/hc/en-us/articles/216918447-Downloading-a-GPX-Route-from-other-Athlete-s-Activities](https://support.strava.com/hc/en-us/articles/216918447-Downloading-a-GPX-Route-from-other-Athlete-s-Activities "https://support.strava.com/hc/en-us/articles/216918447-Downloading-a-GPX-Route-from-other-Athlete-s-Activities")
+With the course data collected, the next step is to analyze it and aggregate some features from the key features that classify a cross country course, so that we can compare courses in our final prediction model.
 
 ## Elevation
 
