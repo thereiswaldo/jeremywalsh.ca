@@ -7,7 +7,7 @@ categories: ''
 ---
 Before we can do detailed predictions for cross country races we need to build a dataset. This dataset is going to be primarily filled with the race results, but we also want to add other exogenous features to improve the accuracy of our model. As anyone who has a run a race before could tell you, your name and the race distance alone aren't enough to accurately predict your finish time. Other factors like the weather and the time in season play a large impact on an individuals finish time. For this post I want to abstract exogenous features that I think will play a large role in our model, the race course.
 
-Cross country courses are all unique. Most in Canada are a series of loops over a hilly, grassy area. The size and number of hills, and turns in the course are completely up to the race directors, and usually a function of what is available.
+Cross country courses are all unique. Most in Canada are a series of loops over a hilly, grassy area. The size and number of hills and turns are completely up to the race directors, and what is naturally available.
 
 #### insert two same distance course profiles from tableau (satellite image, elevation profile, course records, avg times, avg entrants)
 
@@ -17,21 +17,21 @@ In order for us to make accurate predictions we want to be able to compare diffe
 * The number and degree of turns
 * The heading throughout the course
 
-For each of these features we want a single parameter that quantifies their effect on race times. This post is concerned with developing several options for these parameters, and later when we begin modelling we will select the ones that are most predictive on our dataset.
+For each of these features we want a single parameter that quantifies their effect on race times. This post is concerned with developing several options for these parameters, and later when we begin modelling we will prune down to the most predictive features on the data.
 
 ## Course GPS Data
 
-The basis for the course data is it's gps file. Each course gps file contains latitude, longitude and elevation at each recorded point, while some also include the timestep. I've collected 21 courses (17 Canadian, 4 USA) in my current database from a mix of sources. Some are from gps recordings I've made, while others are pulled from Garmin Connect. Most of the data comes from other athlete's Strava recordings. As long as the athlete has a public profile, [we can download the gps file as a gpx](https://support.strava.com/hc/en-us/articles/216918447-Downloading-a-GPX-Route-from-other-Athlete-s-Activities). Finding the athletes that chose to wear a gps watch and post the results is a difficult process so I don't currently have all the courses Canadian teams compete on. If you have one I'm missing, please feel free to send the gpx file or Strava url.
-
-With the course data collected, the next step is to analyze it and aggregate some features from the key features that classify a cross country course, so that we can compare courses in our final prediction model. We'll pull out several parameters for now and then prune down to the most predictive features when we do our final modelling.
+The basis for the course data is it's gps file. Each course gps file contains latitude, longitude and elevation at each recorded point, while some also include the time at each point. I've collected 21 courses (17 Canadian, 4 American) in my current database from a mix of sources. Some are from gps recordings I've made, while others are pulled from Garmin Connect. Most of the data comes from other athlete's Strava recordings. As long as the athlete has a public profile, [we can download the gps file as a gpx](https://support.strava.com/hc/en-us/articles/216918447-Downloading-a-GPX-Route-from-other-Athlete-s-Activities). Finding the athletes that chose to wear a gps watch and post the results is a difficult process so I don't currently have all the courses Canadian teams compete on. If you have one I'm missing, please feel free to send the gpx file or Strava url.
 
 ## Elevation
 
-The simplest of the concepts to understand it's impact is elevation. Running uphill is difficult and slows runners, while running downhill is generally easier. The core reason for this is the simple physics that climbing a hill requires an investment of potential energy to overcome gravity (PE=mgh). The more elevation in a course, the more work that needs to be done to overcome gravity, the slower the course is to run. This brings us to our first feature, elevation gain
+The simplest of the concepts to understand is elevation. Running uphill is difficult and slows runners, while running downhill is generally easier. The core reason for this is the simple physics that climbing a hill requires an investment of potential energy to overcome gravity (PE=mgh). The more elevation in a course, the more work that needs to be done to overcome gravity, the slower the course is to run. This brings us to our first feature, elevation gain.
 
 ### Elevation Gain
 
-Elevation gain is the most common metric to describe hilly races.
+Elevation gain is the most common metric to describe hilly races. The metric is a summation of all the increases in elevation over the entire race. This is calculated by taking the difference in elevation at each point from the previous point and summing up all the positive values. In the picture below the elevation gain from A to D is \[(HB - HA) + (HD - HC)\].
+
+![](https://upload.wikimedia.org/wikipedia/commons/9/9a/Elevation_gain.png "Elevation Gain")
 
 Because human bodies aren't frictionless wheels, there isn't a simple relationship between hills and pace, particularly for downhills.
 
