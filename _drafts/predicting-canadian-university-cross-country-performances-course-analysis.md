@@ -29,9 +29,15 @@ The simplest of the concepts to understand is elevation. Running uphill is diffi
 
 ### Elevation Gain
 
-Elevation gain is the most common metric to describe hilly races. The metric is a summation of all the increases in elevation over the entire race. This is calculated by taking the difference in elevation at each point from the previous point and summing up all the positive values. In the picture below the elevation gain from A to D is \[(HB - HA) + (HD - HC)\].
+Elevation gain is the most common metric to describe hilly races. It is a summation of all the increases in elevation over the entire race. This is calculated by taking the difference in elevation at each point from the previous point and summing up all the positive values. In the picture below the elevation gain from A to D is \[(HB - HA) + (HD - HC)\].
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/9a/Elevation_gain.png "Elevation Gain")
+
+* show elevation gain of courses in a plot
+
+### Elevation Standard Deviation
+
+Elevation gain on it's own doesn't tell the whole story. Gradual hills are far easier to run on then steep hills. An easy rolling hills course might have the same elevation gain as a course with a few steep hills, but in my experience, the steep hills would be slower. 
 
 Because human bodies aren't frictionless wheels, there isn't a simple relationship between hills and pace, particularly for downhills.
 
