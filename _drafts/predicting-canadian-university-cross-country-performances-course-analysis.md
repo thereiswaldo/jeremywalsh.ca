@@ -37,9 +37,11 @@ Elevation gain is the most common metric to describe hilly races. It is a summat
 
 ### Elevation Standard Deviation
 
-Elevation gain on it's own doesn't tell the whole story. Gradual hills are far easier to run on then steep hills. An easy rolling hills course might have the same elevation gain as a course with a few steep hills, but in my experience, the steep hills would be slower. 
+Elevation gain on it's own doesn't tell the whole story. Gradual hills are far easier to run on then steep hills. An easy rolling hills course might have the same elevation gain as a course with a few steep hills, but in my experience, the steep hills would be slower. In an effort to have simple model parameters we'll use the standard deviation of the elevation gradients. This standard deviation, accompanied by the elevation should be a good indicator for the effect of hills on race times. A course with low elevation gain and standard deviation would be expected to be faster than a course with high elevation gain and standard deviation.
 
-Because human bodies aren't frictionless wheels, there isn't a simple relationship between hills and pace, particularly for downhills.
+### Grade Adjusted Pace Modelling
+
+The alternative to these simpler parameters is to take a more detailed analysis of each point in the course and ascribe how that point effects the pace. The points along a steep uphill slow down the pace, along the downhill speed up the pace, across flats have a neutral effect, and add up to a holistic impact on the pace. This function we want to apply isn't entirely straightforward. Human bodies aren't frictionless wheels, so there isn't a simple relationship between hills and pace, particularly for downhills.
 
 The true relationship was first explored in a small study by [Minetti et al. (2002)](https://doi.org/10.1152/japplphysiol.01177.2001). The popular activity tracking app Strava looked at all of their data to develop a Grade Adjusted Pace (GAP) for their platform. The method to derive the current version of GAP calculation is detailed [in this blog post](https://medium.com/strava-engineering/an-improved-gap-model-8b07ae8886c3), and the plot they derived is shown here:
 
