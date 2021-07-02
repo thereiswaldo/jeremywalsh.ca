@@ -53,7 +53,10 @@ There are other rules of thumbs posted online, but most follow this trend. The s
 
 \~\~\~ we want to take the gradients from the races and apply this translation to see how there time should be affected
 
-* 
+## Turniness
+
+I haven't found a good name for "amount and severity of turns", so for succintity I'm calling this "turniness".  
+
 * turniness
   * explain effect from looking at world records for indoor and outdoor of different distances. Look at how they change iwth distance (is it mostly speed based/forces on the body?)
 * 1m vectored directions, use for when get wind direction determine distance into the wind, distance tailwind, distance perpendicular to use for drag. Would eventually cross the wind direction and distance travelled in a drag formula.
