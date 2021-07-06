@@ -15,7 +15,7 @@ In order for us to make accurate predictions we want to be able to compare diffe
 
 * Elevation profile
 * The number and degree of turns
-* The heading throughout the course
+* The heading
 
 For each of these features we want a single parameter that quantifies their effect on race times. This post is concerned with developing several options for these parameters, and later when we begin modelling we will prune down to the most predictive features on the data.
 
@@ -55,8 +55,12 @@ There are other rules of thumbs posted online, but most follow this trend. The s
 
 ## Turniness
 
-I haven't found a good name for "amount and severity of turns", so for succintity I'm calling this "turniness".  
+I haven't found a good name for "amount and severity of turns", so for succintity I'm calling this "turniness".
 
 * turniness
   * explain effect from looking at world records for indoor and outdoor of different distances. Look at how they change iwth distance (is it mostly speed based/forces on the body?)
 * 1m vectored directions, use for when get wind direction determine distance into the wind, distance tailwind, distance perpendicular to use for drag. Would eventually cross the wind direction and distance travelled in a drag formula.
+
+## Heading
+
+The final parameter I want to include is the heading. This should be the direction travelling at each point in the race. 
