@@ -13,22 +13,26 @@ The team of Aaron Brown, Jerome Blake, Brendon Rodney, and Andre de Grasse broug
 
 The silver medal winning Great Britain's time is the fastest silver medal in Olympic history pointing to not just to the progression of the sprint times, but the depth of competition in the event.
 
-![](/uploads/olympic-4x100m-medal-winning-times.png)
+![Olympic 4X100m Medal Winning Times Scatter Plot](/uploads/olympic-4x100m-medal-winning-times.png "Olympic 4X100m Medal Winning Times")
 
 With the potential of [Great Britain's silver medal winning team being disqualified](https://www.cbc.ca/sports/olympics/summer/trackandfield/chinjindu-ujah-tests-positive-4-100m-tokyo-olympics-1.6138959), there is potential for Canada getting upgraded to silver.
 
-### Andre DeGrasse Trifecta
+### Andre De Grasse Trifecta
 
-* 100m best Canadian event for medals
-  * [4th best by country](https://en.wikipedia.org/wiki/100_metres_at_the_Olympics#Age)
-  * **treemap**
+Andre De Grasse cemented himself as a superhuman sprinter and one of the greatest olympians in Canadian history. His three medals in Tokyo 2020 to match his three from Rio 2016 put him in some illustrious company.
+
+* number of medals compared to [all time canadian medalists](https://en.wikipedia.org/wiki/Canada_at_the_Olympics#Top_Medal_earners) (tied for 2nd)
+  * age of degrasse vs competitors for potentially getting another 3 medals at the next olympics, rival penny 5yr his junior?
+  * **barh with photos or circle plot of face with size being number of medals**
+
+Andre's 100m bronze medal keeps Canada as the [4th most medals](https://en.wikipedia.org/wiki/100_metres_at_the_Olympics#Medals_by_country) in the event. It is Canada's 7th medal in the event, the most successful athletics event for Canada all time.
+
+![Number of Canadian Medals in Each Event broken out by category and coloured for gender](/uploads/canadianmedalstreemap.png "Number of Canadian Medals in Each Event")
+
 * nr in 200m,
   * [Canada 3rd best all countries](https://en.wikipedia.org/wiki/200_metres_at_the_Olympics#Age)
     * **barh, maybe include 100m and 4x100m**
   * 5th all time at Olympics
-* number of medals compared to [all time canadian medalists](https://en.wikipedia.org/wiki/Canada_at_the_Olympics#Top_Medal_earners) (tied for 2nd)
-  * age of degrasse vs competitors for potentially getting another 3 medals at the next olympics, rival penny 5yr his junior?
-  * **barh with photos or circle plot of face with size being number of medals**
 
 ### Mo Speed
 
