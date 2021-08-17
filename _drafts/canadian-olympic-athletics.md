@@ -9,6 +9,8 @@ Canada won 24 medals at the Tokyo 2020 Olympic games, with 6 coming from Athleti
 
 ### 4x100m Bronze
 
+The team of Aaron Brown, Jerome Blake, Brendon Rodney, and Andre de Grasse brought home the final olympic medal of the athletics campaign with a bronze. The time of 37.70 is the [3rd best all time](https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Relays&event_id=136&track_wind=No&best_by_athlete=Yes) from a Canadian team, only behind the bronze medal performance in the Rio 2016 games and the gold from the Atlanta 1996 games.  
+
 * relative goodness, splits, Canadian record comparison
 * [https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Relays&event_id=136&track_wind=No&best_by_athlete=Yes](https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Relays&event_id=136&track_wind=No&best_by_athlete=Yes "https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Relays&event_id=136&track_wind=No&best_by_athlete=Yes")
 * **Fastest silver and bronze model in olympic history**
