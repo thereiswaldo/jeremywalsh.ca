@@ -9,12 +9,14 @@ Canada won 24 medals at the Tokyo 2020 Olympic games, with 6 coming from Athleti
 
 ### 4x100m Bronze
 
-The team of Aaron Brown, Jerome Blake, Brendon Rodney, and Andre de Grasse brought home the final olympic medal of the athletics campaign with a bronze. The time of 37.70 is the [3rd best all time](https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Relays&event_id=136&track_wind=No&best_by_athlete=Yes) from a Canadian team, only behind the bronze medal performance in the Rio 2016 games and the gold from the Atlanta 1996 games.  
+The team of Aaron Brown, Jerome Blake, Brendon Rodney, and Andre de Grasse brought home the final olympic medal of the athletics campaign with a bronze. The time of 37.70 is the [3rd best all time](https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Relays&event_id=136&track_wind=No&best_by_athlete=Yes) from a Canadian team, only behind the bronze medal performance in the Rio 2016 games and the gold from the Atlanta 1996 games.
 
 * relative goodness, splits, Canadian record comparison
 * [https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Relays&event_id=136&track_wind=No&best_by_athlete=Yes](https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Relays&event_id=136&track_wind=No&best_by_athlete=Yes "https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Relays&event_id=136&track_wind=No&best_by_athlete=Yes")
 * **Fastest silver and bronze model in olympic history**
   * scatter, maybe bar
+
+![](/uploads/olympic-4x100m-medal-winning-times.png)
 
 With the potential of [Great Britain's silver medal winning team being disqualified](https://www.cbc.ca/sports/olympics/summer/trackandfield/chinjindu-ujah-tests-positive-4-100m-tokyo-olympics-1.6138959), there is potential for Canada getting upgraded to silver.
 
