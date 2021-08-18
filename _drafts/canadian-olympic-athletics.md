@@ -37,13 +37,11 @@ De Grasse's best event is the 200m where he won gold and improved upon his own n
 
 ### Mo Speed
 
-Mohammed Ahmed has been the standout male distance runner in Canada for several years now, and his bronze medal in the 5000m, coupled with a gutsy 6th place in the 10000m certainly adds to this. Ahmed has steadily improved upon his 5000m time year after year, with only 3 years since 2009 that haven't been improvements on the year before.
+Mohammed Ahmed has been the standout male distance runner in Canada for several years now with Canadian records from 3000m to 10000m. At this Olympics he achieved his first Olympic medal with a bronze medal in the 5000m. Coupled that with a gutsy 6th place in the 10000m, Mohammed Ahmed is undeniably one of the greatest Canadian runners of all-time. 
 
-* Canadian records 3km (indoor+outdoor), 5km (indoor+outdoor), 10km
-* [**progression looks good**](https://worldathletics.org/athletes/canada/mohammed-ahmed-14330105)**, could maybe do this compared to NR**
-  * this style if possible
-    * [https://public.tableau.com/app/profile/simon.beaumont/viz/StoryTellingWithDataChallenge-TheFalling100MetresWorldRecord/StoryTellingWithDataChallenge-TheFalling100MetresWorldRecord](https://public.tableau.com/app/profile/simon.beaumont/viz/StoryTellingWithDataChallenge-TheFalling100MetresWorldRecord/StoryTellingWithDataChallenge-TheFalling100MetresWorldRecord "https://public.tableau.com/app/profile/simon.beaumont/viz/StoryTellingWithDataChallenge-TheFalling100MetresWorldRecord/StoryTellingWithDataChallenge-TheFalling100MetresWorldRecord")
-    * [https://stackoverflow.com/questions/63357858/pandas-plot-floating-bar-chart](https://stackoverflow.com/questions/63357858/pandas-plot-floating-bar-chart "https://stackoverflow.com/questions/63357858/pandas-plot-floating-bar-chart")
+Ahmed has steadily improved upon his 5000m time leading up to this Olympics, with only 3 years since 2009 that haven't been improvements on the year before.
+
+![](/uploads/mohammed-ahemd-s-5000m-progression.png)
 
 ### Evan Dunfee Walks away with Bronze
 
