@@ -19,15 +19,19 @@ With the potential of [Great Britain's silver medal winning team being disqualif
 
 ### Andre De Grasse Trifecta
 
-Andre De Grasse cemented himself as a superhuman sprinter and one of the greatest olympians in Canadian history. His three medals in Tokyo 2020 to match his three from Rio 2016 put him in some illustrious company.
+Andre De Grasse cemented himself as a superhuman sprinter and one of the greatest olympians in Canadian history. His three medals in Tokyo 2020 to match his three from Rio 2016 put him in some illustrious company.![Top Canadian Olympic Medalists By Medal](/uploads/top-canadian-olympic-medalists.png "Top Canadian Olympic Medalists")
 
-* number of medals compared to [all time canadian medalists](https://en.wikipedia.org/wiki/Canada_at_the_Olympics#Top_Medal_earners) (tied for 2nd)
-  * age of degrasse vs competitors for potentially getting another 3 medals at the next olympics, rival penny 5yr his junior?
-  * **barh with photos or circle plot of face with size being number of medals**
+With Penny Oleksiak and Andre De Grasse likely competing again in three years at the 2024, there is the potential for the top end of this graph to change again soon.
 
-Andre's 100m bronze medal keeps Canada as the [4th most medals](https://en.wikipedia.org/wiki/100_metres_at_the_Olympics#Medals_by_country) in the event. It is Canada's 7th medal in the event, the most successful athletics event for Canada all time.
+##### 100m
+
+Andre's 100m bronze medal keeps Canada as the country with the [4th most medals](https://en.wikipedia.org/wiki/100_metres_at_the_Olympics#Medals_by_country) in the event. It is Canada's 7th medal in the event, the most successful athletics event for Canada all time.
 
 ![Number of Canadian Medals in Each Event broken out by category and coloured for gender](/uploads/canadianmedalstreemap.png "Number of Canadian Medals in Each Event")
+
+##### 200m
+
+De Grasse's gold medal performance in the 200m improved upon his own national record. The pace he ran for the 200m was even faster than 
 
 * nr in 200m,
   * [Canada 3rd best all countries](https://en.wikipedia.org/wiki/200_metres_at_the_Olympics#Age)
