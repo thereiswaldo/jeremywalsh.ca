@@ -31,12 +31,9 @@ Andre's 100m bronze medal keeps Canada as the country with the [4th most medals]
 
 ##### 200m
 
-De Grasse's gold medal performance in the 200m improved upon his own national record. The pace he ran for the 200m was even faster than 
+De Grasse's best event is the 200m where he won gold and improved upon his own national record. With his incredible top speed, the average pace of his 200m was faster than his 100m by 0.3 km/hr.
 
-* nr in 200m,
-  * [Canada 3rd best all countries](https://en.wikipedia.org/wiki/200_metres_at_the_Olympics#Age)
-    * **barh, maybe include 100m and 4x100m**
-  * 5th all time at Olympics
+![](/uploads/speed-difference-in-de-grasse-s-races.png)
 
 ### Mo Speed
 
