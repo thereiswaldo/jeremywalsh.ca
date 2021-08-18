@@ -37,6 +37,8 @@ De Grasse's best event is the 200m where he won gold and improved upon his own n
 
 ### Mo Speed
 
+Mohammed Ahmed
+
 * Canadian records 3km (indoor+outdoor), 5km (indoor+outdoor), 10km
 * [**progression looks good**](https://worldathletics.org/athletes/canada/mohammed-ahmed-14330105)**, could maybe do this compared to NR**
   * this style if possible
