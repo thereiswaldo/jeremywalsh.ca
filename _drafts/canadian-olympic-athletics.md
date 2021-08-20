@@ -37,7 +37,7 @@ De Grasse's best event is the 200m where he won gold and improved upon his own n
 
 ### Mo Speed
 
-Mohammed Ahmed has been the standout male distance runner in Canada for several years now with Canadian records from 3000m to 10000m. At this Olympics he achieved his first Olympic medal with a bronze medal in the 5000m. Coupled that with a gutsy 6th place in the 10000m, Mohammed Ahmed is undeniably one of the greatest Canadian runners of all-time. 
+Mohammed Ahmed has been the standout male distance runner in Canada for several years now with Canadian records from 3000m to 10000m. At this Olympics he achieved his first Olympic medal with a bronze medal in the 5000m. Coupled that with a gutsy 6th place in the 10000m, Mohammed Ahmed is undeniably one of the greatest Canadian runners of all-time.
 
 Ahmed has steadily improved upon his 5000m time leading up to this Olympics, with only 3 years since 2009 that haven't been improvements on the year before.
 
@@ -45,55 +45,16 @@ Ahmed has steadily improved upon his 5000m time leading up to this Olympics, wit
 
 ### Evan Dunfee Walks away with Bronze
 
-After a [contentious fourth place at the 2016 Rio Olympic games](https://globalnews.ca/news/2892133/rio-2016-canadas-evan-dunfee-finishes-fourth-in-50-kilometre-race-walk-after-a-collision-near-finish-line/), Evan Dunfee claimed the elusive bronze medal with a momentous final kick. Tokyo was the final 50km race at the Olympics as it ends it's walk through Olympic history that started in 1932. 
+After a [contentious fourth place at the 2016 Rio Olympic games](https://globalnews.ca/news/2892133/rio-2016-canadas-evan-dunfee-finishes-fourth-in-50-kilometre-race-walk-after-a-collision-near-finish-line/), Evan Dunfee claimed the elusive bronze medal with a momentous final kick. Tokyo was the final 50km race at the Olympics as it ends it's walk through Olympic history that started in 1932.
 
 Dunfee is the Canadian record holder in the 5000m (18:39.08), 10000m (38:39.72), and 50km (3:41:38) race walks. His marathon split during his 50km record is approximately 3:09:30, which is a [Boston Qualifier for men above the age of 40](https://www.baa.org/races/boston-marathon/qualify).
 
-When Dunfee broke the Canadian record in 2015, it had been standing since 1981. Dunfee has since bested his own record, and is clearly a standout in the distance when compared to the althetes that fill out the top 10. 
+When Dunfee broke the Canadian record in 2015, it had been standing since 1981. Dunfee has since bested his own record, and is clearly a standout in the distance when compared to the athletes that fill out the top 10.
 
-### Damien Warner in Perspective
+![](/uploads/top-10-canadian-50km-race-walkers.png "Top 10 Canadian 50km Race Walkers")
 
-100m - place in 100m straight up, wdb, superimpose position in the 100m final, [16th all time canada](https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Sprints&event_id=63&track_wind=Yes&best_by_athlete=Yes) (maybe don't say this)
+### Damien Warner - Instagram Worthy
 
-Long Jump - length of ? (2 lanes = 6m, 3pt line is 7.4m, double car garage 5.5m, he has the NR
+Damien Warner was crowned the unofficial greatest athlete with his win of the Decathlon. Each individual performance is outstanding in it's own right, from a 100m that would have placed him in the 100m final, to a high jump that would have been good enough for bronze.
 
-Shot put - school bus 13.7m
-
-high jump - standard door is 2.032m
-
-400m - speed?
-
-110m hurdles - odb
-
-discus throw -
-
-pole vault - backetball hoop 3m
-
-javelin throw - soccer 105m, basketball court is 28.6512m
-
-1500m - closing split? PB is 4:24.73
-
-* [**progression of his events individually is interesting**](https://worldathletics.org/athletes/canada/damian-warner-14173337)**, small improvments that meant big jumps in score**
-  * maybe dumbbell plot score difference since 2016
-* maybe show all time how much
-* comparison his performances vs [natioanl records](https://athletics.ca/rankings-records/canadian-records/)
-* diverging bar from wr?
-
-### Instagram worthy
-
-* all canada sports followers
-* percentage increase a from all sports
-  * **boxplot or violin**
-* largest increases, and hwen they happened
-  * **line plot of top 3 with annotation end of the line for their name and annotation of why sudden increase (medal?)**
-* monetary worth of social plus AEF; [https://olympic.ca/programs/athlete-excellence-fund/](https://olympic.ca/programs/athlete-excellence-fund/ "https://olympic.ca/programs/athlete-excellence-fund/")
-
-## Other
-
-**Sankey graph for province to sport.**
-
-age, height horizontal boxplot in [matplotlib](), like [these ones](https://nycdatascience.com/blog/student-works/olympic-games-data-visualization/) but sorted by mean
-
-* **population pyramid of team men/women**
-* **map of where athletes from**
-* **vertical bar of heights**
+* 
