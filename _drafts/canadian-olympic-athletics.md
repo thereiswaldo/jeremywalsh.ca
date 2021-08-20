@@ -55,4 +55,8 @@ When Dunfee broke the Canadian record in 2015, it had been standing since 1981. 
 
 ### Damien Warner - Instagram Worthy
 
-Damien Warner was crowned the unofficial greatest athlete with his win of the Decathlon. Each individual performance is outstanding in it's own right, from a 100m that would have placed him in the 100m final, to a high jump that would have been good enough for bronze.
+Damien Warner was crowned the unofficial greatest athlete with his win of the Decathlon. Each individual performance is outstanding in it's own right, from a 100m that would have placed him in the 100m final, to a high jump that would have been good enough for bronze. More analysis is likely warranted on the results themselves, but for now I wanted to look at his Instagram following during the games. 
+
+Instagram is good measure for an athletes marketability which has a large impact on the sponsorship opportunities for athletes. Damien saw one of the largest upticks of any Canadian at the games, with 12930 followers before his events started on August 4th, to 23172 followers the day after he won gold. Interestingly, he only received a couple thousand more followers after being named the flagbearer on August 7th.
+
+![](/uploads/damien-warner-s-instagram-following-during-the-olympics.png)
