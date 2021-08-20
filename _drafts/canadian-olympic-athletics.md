@@ -56,5 +56,3 @@ When Dunfee broke the Canadian record in 2015, it had been standing since 1981. 
 ### Damien Warner - Instagram Worthy
 
 Damien Warner was crowned the unofficial greatest athlete with his win of the Decathlon. Each individual performance is outstanding in it's own right, from a 100m that would have placed him in the 100m final, to a high jump that would have been good enough for bronze.
-
-* 
