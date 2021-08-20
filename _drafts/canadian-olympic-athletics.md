@@ -45,12 +45,11 @@ Ahmed has steadily improved upon his 5000m time leading up to this Olympics, wit
 
 ### Evan Dunfee Walks away with Bronze
 
-* history of walks at the games, last one for 50km
-* Evan's marathon split, boston qualifier?
-* canadian record holder 50km (3:41:38, lead finsihed 4th, dq to 3rd, then appeal to 4th), 5km (18:39.08), 10km walks
-* [Progression slowed from 2016 fitness](https://worldathletics.org/athletes/canada/evan-dunfee-14174336), but able to pull off bronze
-* record performance userps old record from [1981](https://athletics.ca/rankings-records/rankings/?y=0&season=Outdoor&area=National&age_group_id=&category=Race%20Walks&event_id=115&track_wind=No&best_by_athlete=Yes), best of all time by good margin
-  * top 10 bar graph
+After a [contentious fourth place at the 2016 Rio Olympic games](https://globalnews.ca/news/2892133/rio-2016-canadas-evan-dunfee-finishes-fourth-in-50-kilometre-race-walk-after-a-collision-near-finish-line/), Evan Dunfee claimed the elusive bronze medal with a momentous final kick. Tokyo was the final 50km race at the Olympics as it ends it's walk through Olympic history that started in 1932. 
+
+Dunfee is the Canadian record holder in the 5000m (18:39.08), 10000m (38:39.72), and 50km (3:41:38) race walks. His marathon split during his 50km record is approximately 3:09:30, which is a [Boston Qualifier for men above the age of 40](https://www.baa.org/races/boston-marathon/qualify).
+
+When Dunfee broke the Canadian record in 2015, it had been standing since 1981. Dunfee has since bested his own record, and is clearly a standout in the distance when compared to the althetes that fill out the top 10. 
 
 ### Damien Warner in Perspective
 
