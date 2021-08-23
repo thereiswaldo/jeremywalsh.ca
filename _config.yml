@@ -69,9 +69,9 @@ footer:
 about_title: About Me
 about_profile_image: /assets/images/headshot.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I'm an engineer who enjoys applying data science to water treatment and sports analytics.
-  I have an Bachelor's of Engineering Physics from McMaster University and 8 years experience in engineering roles at SUEZ Water Technologies and Solutions (formerly GE Water).
-  I enjoy playing sports and spending time with my newborn and wife.
+  I'm an engineer who enjoys applying data science to water treatment and sport.
+  I have a Bachelor's of Engineering Physics from McMaster University and 8 years experience in engineering roles at SUEZ Water Technologies and Solutions (formerly GE Water).
+  I enjoy playing sports, games, and spending time with my family.
 
 content:
   - title: Projects # Title for the section
@@ -119,6 +119,13 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+
+# Analytics
+analytics:
+  provider               : google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : UA-205527455-1
+    anonymize_ip         : # true, false (default)
 
 # Exclude from processing.
 # The following items will not be processed, by default.

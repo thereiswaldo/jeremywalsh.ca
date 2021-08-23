@@ -9,7 +9,6 @@
     Developing hybrid data-driven and mechanistic models for water treatment plant analysis and simulation. Designing optimal control methods for complex systems. Applying machine learning techniques to forecast water system performance and detect important events.
 - layout: left
   company: Process Engineer
-  link: https://www.suezwatertechnologies.com/
   job_title: SUEZ Water Technologies and Solutions
   dates: August 2018 - December 2020
   # quote: >
@@ -19,11 +18,18 @@
 
 - layout: left
   company: Project Engineer
-  link: https://www.suezwatertechnologies.com/
   job_title: SUEZ Water Technologies and Solutions
   dates: November 2016 - August 2018
   description: >
     Designed mechanical and electrical equipment within the scope and requirements of the customer for 12 projects. Controlled engineering activities to maintain work standards, adhere to timelines and meet quality assurance targets. Automated data entry for BOM creation using scripting tools.
+
+- layout: left
+  company: Commissioning Field Service Representative
+  job_title: GE Water and Process Technologies
+  dates: June 2013 - October 2016
+  description: >
+    Commissioned large and small scale municipal and industrial water treatment plants. Ensured proper mechanical and electrical construction, controls strategy, as well as configuring and troubleshooting PLC and HMI software.
+
 
 # - layout: left
 #   company: SUEZ Water Technologies and Solutions
