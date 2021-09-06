@@ -122,10 +122,11 @@ content:
 
 # Analytics
 analytics:
-  provider               : google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : UA-205527455-1
+    tracking_id          : "UA-205527455-1"
     anonymize_ip         : # true, false (default)
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
