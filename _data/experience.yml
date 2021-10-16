@@ -1,8 +1,17 @@
 - layout: left
+  company: Senior Data Analyst
+  link: https://dofasco.arcelormittal.com/
+  job_title: Arcelor Mittal Dofasco
+  dates: September 2021 - present
+  # quote: >
+  #  Short description of the company (optional)
+  description: >
+    Driving continuous improvement and evolution into industry 4.0 through the application of statistical analysis/data analytics.
+- layout: left
   company: Lead Researcher
   link: https://www.suezwatertechnologies.com/
   job_title: SUEZ Water Technologies and Solutions
-  dates: January 2021 - present
+  dates: January 2021 - September 2021
   # quote: >
   #  Short description of the company (optional)
   description: >
