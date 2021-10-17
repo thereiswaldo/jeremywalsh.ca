@@ -69,8 +69,8 @@ footer:
 about_title: About Me
 about_profile_image: /assets/images/headshot.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I'm an engineer who enjoys applying data science to water treatment and sport.
-  I have a Bachelor's of Engineering Physics from McMaster University and 8 years of experience in engineering ad data analysis roles. I am currently working at ArcelorMittal Dofasco as a Senior Data Analyst.
+  I'm an engineer who enjoys applying data science to process optimization and sport.
+  I have a Bachelor's of Engineering Physics from McMaster University and 8 years of experience in engineering and data analysis roles. I am currently working at ArcelorMittal Dofasco as a Senior Data Analyst.
   I enjoy playing sports, games, and spending time with my family.
 
 content:
