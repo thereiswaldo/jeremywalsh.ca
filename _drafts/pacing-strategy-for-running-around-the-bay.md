@@ -7,7 +7,7 @@ categories: ''
 ---
 A friend was wondering how to pace themselves at the Around the Bay 30km road race on March 27th. The race has a unique elevation profile of several significant hills in the last 10km.
 
-> insert course profile here
+![](/uploads/around-the-bay-course-profile.png)
 
 For a runner hoping to meet a specific time it begs the question of whether they should start the race faster than their goal race pace, anticipating slowing down on the hills near the end of the race. Conventional running wisdom is to run "even splits", which is running the same pace for the entirety of a race.  I want to look at what is optimal for the Around the Bay course. I'll do that by comparing how well popular heuristics and models align with historical results at Around the Bay. First let's review the methods we'll compare.
 
