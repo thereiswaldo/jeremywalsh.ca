@@ -13,6 +13,8 @@ For a runner hoping to meet a specific time it begs the question of whether they
 
 ### Pacing Heuristics
 
+#### Even Pace/Even Effort
+
 The simplests of the pacing heuristics are even pace, and even effort. Even pacing simple means to run the same pace through the whole race. It's a good strategy for a flat course, but can be near impossible to replicate on a hilly course. The solution is then to switch to an even effort, where a exertion is kept constant, and pace is slowed on uphills and increased on downhills. This is a good simple heuristic, but can be difficult to follow in a race. Unless one is diligently heart rate or power training, it's difficult to start and maintain a heart rate or power throughout a race.
 
 At a slightly higher complexity level are the rules developed from two of the most infamous studies on the subject.
@@ -49,7 +51,7 @@ TrainingPeaks has a similar metric called [Normalized Graded Pace](https://www.t
 
 #### Results
 
-Most of the data for this analysis is scraped from results posted on [https://www.sportstats.ca/](https://www.sportstats.ca/ "https://www.sportstats.ca/"). They have included for the races from **2015**-2019 the 10km, 15km, 20km, and finish splits for each athlete. Splits from earlier years are accessible, but more difficult to obtain and the 4 years captured have shown to be sufficient for our purposes. 
+Most of the data for this analysis is scraped from results posted on [https://www.sportstats.ca/](https://www.sportstats.ca/ "https://www.sportstats.ca/"). They have included for the races from **2015**-2019 the 10km, 15km, 20km, and finish splits for each athlete. Splits from earlier years are accessible, but more difficult to obtain and the 4 years captured have shown to be sufficient for our purposes.
 
 #### GPS
 
