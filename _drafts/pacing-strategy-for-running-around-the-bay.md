@@ -79,7 +79,17 @@ As we expected, the final 10km of the race are slowest. On average the first 10k
 * filtering for just people who pb'ed, is there a trend in their pace, or elite athletes
 * filter for people in my target time
 
-Keeping my filtering as simple as possible I've selected two comparison criteria. The first is to only look at runners that have previously run the race in my dataset. The thought is these multiple finishers will know the course well and how they should pace themselves. It leaves in a wide distribution of 
+Keeping my filtering as simple as possible I've selected two comparison criteria. The first is to only look at runners that have previously run the race in my dataset. The thought is these multiple finishers will know the course well and how they should pace themselves. Dropping each runners first performance in the dataset leaves in a wide distribution of times and keeps 4622 performances (26% of the 17440 in the dataset).
+
+![](/uploads/multiple-finishers-30km-time-distribution.png)
+
+The other, more relevant to me filter is just for those athletes who ran faster than two hours. Though the definition of elite is up for debate, this the top 1.6% of all finishers, and leaves just 279 performances which is enough for me to feel confident about the aggregated data.
+
+![](/uploads/elites-30km-time-distribution.png)
+
+![](/uploads/around-the-bay-pacing-form-2016-19.png)
+
+![](/uploads/around-the-bay-pacing-comparison.png)
 
 ## Prescription
 
