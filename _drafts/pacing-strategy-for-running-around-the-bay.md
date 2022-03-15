@@ -9,13 +9,13 @@ A friend was wondering how to pace themselves at the Around the Bay 30km road ra
 
 ![](/uploads/around-the-bay-course-profile.png)
 
-For a runner hoping to meet a specific time it begs the question of whether they should start the race faster than their goal race pace, anticipating slowing down on the hills near the end of the race. Conventional running wisdom is to run "even splits", which is running the same pace for the entirety of a race.  I want to look at what is optimal for the Around the Bay course. I'll do that by comparing how well popular heuristics and models align with historical results at Around the Bay. First let's review the methods we'll compare.
+For a runner hoping to meet a specific time it begs the question of whether they should start the race faster than their goal race pace or not. A faster starting pace in anticipation for slowing down on the hills near the end of the race makes some sense, but begs the question of how much faster? Conventional running wisdom is to run "even splits", which is running the same pace for the entirety of a race. As I'm going to be running the race this year, I want to look at what is optimal pacing for the Around the Bay course. I'll do that by comparing how well popular heuristics and models align with historical results at Around the Bay. First let's review the methods we'll compare.
 
 ### Pacing Heuristics
 
 #### Even Pace/Even Effort
 
-The simplests of the pacing heuristics are even pace, and even effort. Even pacing simple means to run the same pace through the whole race. It's a good strategy for a flat course, but can be near impossible to replicate on a hilly course. The solution is then to switch to an even effort, where a exertion is kept constant, and pace is slowed on uphills and increased on downhills. This is a good simple heuristic, but can be difficult to follow in a race. Unless one is diligently heart rate or power training, it's difficult to start and maintain a heart rate or power throughout a race.
+The simplest of the pacing heuristics are even pace, and even effort. Even pacing simple means to run the same pace through the whole race. It's a good strategy for a flat course, but can be near impossible to replicate on a hilly course. The solution is then to switch to an even effort, where an exertion level is kept constant, as pace is slowed on uphills and increased on downhills. This is a good simple heuristic, but can be difficult to follow in a race. Unless one is diligently heart rate or power training, it's difficult to start and maintain an effort throughout a race.
 
 At a slightly higher complexity level are the rules developed from two of the most infamous studies on the subject.
 
@@ -31,17 +31,17 @@ The legendary coach Jack Daniels is heavily quoted for a [comment he (jtupper) m
 
 > +9.2s/mile/% gradient incline
 
-John Kellogg made similar online posts, which have been [summarized in this document](https://docs.google.com/file/d/0B_zzkn1-wR0dRFNLT0tXTVlUN3FyZGpiVWRBNld0dw/edit?resourcekey=0-4GUJ056H30C6KtvbjGxmCA). His number was a more conservative 9.2 seconds should be added per mile per increase in gradient percent, which he further generalized to 1.74s for each 10ft elevation gain regardless of distance covered. John never specified the effect of the downhills so we won't use his numbers further in our analysis. Jack and John both expressed that there formulas are merely guidelines, that seemed accurate on average for people they studied.
+John Kellogg made similar online posts, which have been [summarized in this document](https://docs.google.com/file/d/0B_zzkn1-wR0dRFNLT0tXTVlUN3FyZGpiVWRBNld0dw/edit?resourcekey=0-4GUJ056H30C6KtvbjGxmCA). His number was a more conservative 9.2 seconds should be added per mile per increase in gradient percent, which he further generalized to 1.74s for each 10ft elevation gain regardless of distance covered. John never specified the effect of the downhills so we won't use his numbers further in our analysis. 
+
+Jack and John both expressed that there formulas are merely guidelines, that seemed accurate on average for people they studied. Since the studies were on runners of relatively similar ability as myself they should have some good information for me. Their guidelines don't scale with pace, so they won't be as accurate for runners much slower than 4min/km.  For a more general tool we need a model.
 
 ### Models
 
 #### Grade Adjusted Pace
 
-Strava has a model they apply for all subscribers on their platform called Grade Adjusted Pace. I'll discuss it further in an upcoming post about cross country courses. [This blog post](https://medium.com/strava-engineering/an-improved-gap-model-8b07ae8886c3) details the model and compares it with a study from a [2002 paper](https://pubmed.ncbi.nlm.nih.gov/12183501/) on the matter.
+Strava has a model they apply for all subscribers on their platform called Grade Adjusted Pace. I'll discuss it further in an upcoming post about cross country courses. [This blog post](https://medium.com/strava-engineering/an-improved-gap-model-8b07ae8886c3) details the model and compares it with a study from a [2002 paper](https://pubmed.ncbi.nlm.nih.gov/12183501/) on the matter. For our comparison we will use both the Strava and Minetti curves.
 
 ![](https://miro.medium.com/max/1400/1*_TwofsNS872wbUS12ykKPQ.png)
-
-[blog](https://support.strava.com/hc/en-us/articles/216917067-Grade-Adjusted-Pace-GAP-)
 
 #### Normalized Graded Pace
 
@@ -51,11 +51,11 @@ TrainingPeaks has a similar metric called [Normalized Graded Pace](https://www.t
 
 #### Results
 
-Most of the data for this analysis is scraped from results posted on [https://www.sportstats.ca/](https://www.sportstats.ca/ "https://www.sportstats.ca/"). They have included for the races from **2015**-2019 the 10km, 15km, 20km, and finish splits for each athlete. Splits from earlier years are accessible, but more difficult to obtain and the 4 years captured have shown to be sufficient for our purposes.
+Most of the data for this analysis is scraped from results posted on [https://www.sportstats.ca/](https://www.sportstats.ca/ "https://www.sportstats.ca/"). They have included for the races from 2016-2019 the 10km, 15km, 20km, and finish splits for each athlete. Splits from earlier years are accessible, but more difficult to obtain and the 4 years captured have shown to be sufficient for our purposes. 
 
 #### GPS
 
-To analyze at a more granular level, the gps data from some athletes was downloaded from public posts on [https://www.strava.com/](https://www.strava.com/ "https://www.strava.com/"). I reviewed the results for athletes who ran close my desired time, searched for them on strava, and when available, downloaded the gps of their race.
+To get the course elevation profile I've used the gps recordings from my own previous runs on the course. The gps files are parsed into a pandas dataframe for easy calculations and plotting.
 
 ## Data Exploration
 
