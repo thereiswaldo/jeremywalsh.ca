@@ -87,6 +87,10 @@ The other, more relevant to me filter is just for those athletes who ran faster 
 
 ![](/uploads/elites-30km-time-distribution.png)
 
+Being the leading end of the distribution, most of the times are near the 2 hour mark. 
+
+With these filters in place we can take each runners pace for each segment and divide that by the average pace for the entire race
+
 ![](/uploads/around-the-bay-pacing-form-2016-19.png)
 
 ![](/uploads/around-the-bay-pacing-comparison.png)
