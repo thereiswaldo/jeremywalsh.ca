@@ -31,7 +31,7 @@ The legendary coach Jack Daniels is heavily quoted for a [comment he (jtupper) m
 
 > +9.2s/mile/% gradient incline
 
-John Kellogg made similar online posts, which have been [summarized in this document](https://docs.google.com/file/d/0B_zzkn1-wR0dRFNLT0tXTVlUN3FyZGpiVWRBNld0dw/edit?resourcekey=0-4GUJ056H30C6KtvbjGxmCA). His number was a more conservative 9.2 seconds should be added per mile per increase in gradient percent, which he further generalized to 1.74s for each 10ft elevation gain regardless of distance covered. John never specified the effect of the downhills so we won't use his numbers further in our analysis. 
+John Kellogg made similar online posts, which have been [summarized in this document](https://docs.google.com/file/d/0B_zzkn1-wR0dRFNLT0tXTVlUN3FyZGpiVWRBNld0dw/edit?resourcekey=0-4GUJ056H30C6KtvbjGxmCA). His number was a more conservative 9.2 seconds should be added per mile per increase in gradient percent, which he further generalized to 1.74s for each 10ft elevation gain regardless of distance covered. John never specified the effect of the downhills so we won't use his numbers further in our analysis.
 
 Jack and John both expressed that there formulas are merely guidelines, that seemed accurate on average for people they studied. Since the studies were on runners of relatively similar ability as myself they should have some good information for me. Their guidelines don't scale with pace, so they won't be as accurate for runners much slower than 4min/km.  For a more general tool we need a model.
 
@@ -51,7 +51,7 @@ TrainingPeaks has a similar metric called [Normalized Graded Pace](https://www.t
 
 #### Results
 
-Most of the data for this analysis is scraped from results posted on [https://www.sportstats.ca/](https://www.sportstats.ca/ "https://www.sportstats.ca/"). They have included for the races from 2016-2019 the 10km, 15km, 20km, and finish splits for each athlete. Splits from earlier years are accessible, but more difficult to obtain and the 4 years captured have shown to be sufficient for our purposes. 
+Most of the data for this analysis is scraped from results posted on [https://www.sportstats.ca/](https://www.sportstats.ca/ "https://www.sportstats.ca/"). They have included for the races from 2016-2019 the 10km, 15km, 20km, and finish splits for each athlete. Splits from earlier years are accessible, but more difficult to obtain and the 4 years captured have shown to be sufficient for our purposes.
 
 #### GPS
 
@@ -64,10 +64,22 @@ To get the course elevation profile I've used the gps recordings from my own pre
 * comparison of the heuristics (even pace, JD, JK) with all the data
 * maybe show comparison of pace profile with boston or another marathon (toronto?)
 
+The results for the four years from 2016-19 were all combined. With all the splits we can begin to look at the data for insights. The split time distributions show the predictable widening of the distribution as the race spreads out over time, and a small deviation from normal distribution as athletes who went out too fast cause a long tail to the final distributions.
+
+![](/uploads/2019-around-the-bay-split-times.png)
+
+The raw data only has the running time for each athlete at each distance (10km, 15km, 20km, 30km), but we want to look at the pace they ran for each of the segments (0-10km, 10-15km, 15-20km, 20-30km). Calculating these gives us this plot.
+
+![](/uploads/2016-19-average-pace-per-segment.png)
+
+As we expected, the final 10km of the race are slowest. On average the first 10km is 40s/km faster than the last. A slow finish is fairly common for most road races as  most runners are optimistic with their pacing strategy. Since I am going to plan for success, I'll have to remove some of these outliers.
+
 ## Model Development
 
 * filtering for just people who pb'ed, is there a trend in their pace, or elite athletes
 * filter for people in my target time
+
+Keeping my filtering as simple as possible I've selected two comparison criteria. The first is to only look at runners that have previously run the race in my dataset. The thought is these multiple finishers will know the course well and how they should pace themselves. It leaves in a wide distribution of 
 
 ## Prescription
 
