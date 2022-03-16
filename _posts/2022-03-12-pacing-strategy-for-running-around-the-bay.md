@@ -93,11 +93,13 @@ The different filters are plotted along the course profile and compared with the
 
 A correlation of -0.89 is very strong, and means that on average the athletes that start too fast, finish the slowest.
 
-The multi-finishers tend to run closer to even splits, while the elite runners only have 3% variation in pace. The elite filter is not infallible however, as there is are a number of outliers that seem to start out too fast (10%. This shifts our averages slightly to faster starts and slower finishes, but not significantly so we'll leave them in.
+The multi-finishers tend to run closer to even splits, while the elite runners only have 3% variation in pace. However, the elite filter is not perfect, as there is are several outliers that seem to start out too fast (10% faster than they average!). This shifts our averages slightly to faster starts and slower finishes, but not significantly so we'll leave them in.
+
+![](/uploads/elite-pace-percentage-boxplot.png)
 
 ![](/uploads/elites-pacing-correlation.png)
 
-This is informative, but hasn't completely answered the question about what pacing strategy is optimal. It could be that these elite athletes are doing something wrong. In attempt to validate their performance we'll include the other pacing models.
+This is informative, but hasn't completely answered the question about what pacing strategy is optimal. I want to trust the average elite pacing, but it could be that the outliers are racing optimally. In attempt to validate their performance we'll include the other pacing models.
 
 To include the Gradient Adjusted Pace models I calculated the gradient throughout the course and applied each model. I then averaged the percentage pace over each segment.
 
