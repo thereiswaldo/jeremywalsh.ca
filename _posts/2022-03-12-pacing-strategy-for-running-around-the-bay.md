@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Pacing Strategy for Running Around the Bay
-date: 2022-03-12 05:00:00 +0000
+date: 2022-03-12T05:00:00.000+00:00
 categories: ''
 
 ---
@@ -9,13 +9,13 @@ A friend was wondering how to pace themselves at the Around the Bay 30km road ra
 
 ![](/uploads/around-the-bay-course-profile.png)
 
-For a runner hoping to meet a specific time it begs the question of whether they should start the race faster than their goal race pace or not. A faster starting pace in anticipation for slowing down on the hills near the end of the race makes sense, but begs the question of how much faster? Conventional running wisdom is to run "even splits", which is running the same pace for the entirety of a race. As I'm going to be running the race this year, I want to know what the optimal pacing strategy for the Around the Bay course is. I'll do that by comparing how well popular heuristics and models align with historical results at Around the Bay. First let's review the methods that will be compared.
+For a runner hoping to meet a specific time it begs the question of whether they should start the race faster than their goal race pace or not. A faster starting pace in anticipation for slowing down on the hills near the end of the race makes sense, but begs the question of how much faster? Conventional running wisdom is to run "even splits", which is running the same pace for the entirety of a race. As I'm also going to be running the race this year, I want to know what the optimal pacing strategy for the Around the Bay course is. I'll do that by comparing how well popular heuristics and models align with historical results at Around the Bay. First let's review the methods that will be compared.
 
 ### Pacing Heuristics
 
 #### Even Pace/Even Effort
 
-The simplest of the pacing heuristics are even pace, and even effort. Even pacing simple means to run the same pace through the whole race. It's a good strategy for a flat course, but can be near impossible to replicate on a hilly course. The solution is then to switch to an even effort, where an exertion level is kept constant, as pace is slowed on uphills and increased on downhills. This is a good simple heuristic, but can be difficult to follow in a race. Unless one is diligently heart rate or power training, it's difficult to start and maintain an effort throughout a race.
+The simplest of the pacing strategies are even pace, and even effort. Even pacing simple means to run the same pace throughout the race. It's a good strategy for a flat course, but can be near impossible to replicate on a hilly course. The alternative is even effort, where an exertion level is kept constant, as pace is slowed on uphills and increased on downhills. This is a good simple heuristic, but can be difficult to follow in a race. Unless one is diligently heart rate or power training, it's difficult to start and maintain an effort throughout a race.
 
 At a slightly higher complexity level are the rules developed from two of the most infamous studies on the subject.
 
@@ -59,7 +59,7 @@ To get the course elevation profile I've used the gps recordings from my own pre
 
 ## Data Exploration
 
-The results for the four years from 2016-19 were all combined. With all the splits we can begin to look at the data for insights. The split time distributions show the predictable widening of the distribution as the race spreads out over time, and a small deviation from normal distribution as athletes who went out too fast cause a long tail to the final distributions.
+The results for the four years from 2016-19 were all combined for analysis. The split time distributions show the predictable widening of the distribution as the race spreads out over time, and a small deviation from normal as athletes who went out too fast cause a long tail to the final distributions.
 
 ![](/uploads/2019-around-the-bay-split-times.png)
 
@@ -67,15 +67,15 @@ The raw data only has the running time for each athlete at each distance (10km, 
 
 ![](/uploads/2016-19-average-pace-per-segment.png)
 
-As we expected, the final 10km of the race are slowest. On average the first 10km is 40s/km faster than the last. A slow finish is fairly common for most road races as  most runners are optimistic with their pacing strategy. Since I am going to plan for success, I'll have to remove some of these outliers.
+As we expected, the final 10km of the race are slowest (largest pace). On average the first 10km is 40s/km faster than the last. A slow finish is fairly common for most road races as  most runners are optimistic with their pacing strategy. Since I am going to plan for success, I'll have to remove some of these outliers.
 
 ## Data Filtering
 
-Keeping my filtering as simple as possible I've selected two comparison criteria. The first is to only look at runners that have previously run the race in my dataset. The thought is these multiple finishers will know the course well and how they should pace themselves. Dropping each runner's first performance in the dataset leaves in a wide distribution of times and keeps 4622 performances (26% of the 17440 in the dataset).
+Keeping my filtering as simple as possible I've selected two comparison criteria. The first is to only look at runners that have previously run the race in my dataset. The thought is that these multiple finishers will know the course well and how they should pace themselves. Dropping each runner's first performance in the dataset leaves in a wide distribution of times and keeps 4622 performances (26% of the 17440 in the dataset).
 
 ![](/uploads/multiple-finishers-30km-time-distribution.png)
 
-The other, more relevant to me filter is just for those "elite" athletes who ran faster than two hours. Though the definition of elite is up for debate, this the top 1.6% of all finishers, and leaves just 279 performances which is enough for me to feel confident about the aggregated data.
+The other, more relevant filter is to keep only the "elite" athletes who ran faster than two hours. Though the definition of elite is up for debate, this the top 1.6% of all finishers, and leaves just 279 performances. This large enough for me to feel confident in the aggregated results while maximizing the amount of runners that ran close to an optimal pacing strategy.
 
 ![](/uploads/elites-30km-time-distribution.png)
 
