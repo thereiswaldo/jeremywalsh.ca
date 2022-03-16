@@ -69,7 +69,7 @@ The raw data only has the running time for each athlete at each distance (10km, 
 
 As we expected, the final 10km of the race are slowest. On average the first 10km is 40s/km faster than the last. A slow finish is fairly common for most road races as  most runners are optimistic with their pacing strategy. Since I am going to plan for success, I'll have to remove some of these outliers.
 
-## Model Development
+## Data Filtering
 
 Keeping my filtering as simple as possible I've selected two comparison criteria. The first is to only look at runners that have previously run the race in my dataset. The thought is these multiple finishers will know the course well and how they should pace themselves. Dropping each runners first performance in the dataset leaves in a wide distribution of times and keeps 4622 performances (26% of the 17440 in the dataset).
 
@@ -81,9 +81,9 @@ The other, more relevant to me filter is just for those athletes who ran faster 
 
 Being the leading end of the distribution, most of the times are near the 2 hour mark.
 
-With these filters in place we can take each runners pace for each segment and divide that by the average pace for the entire race to get a percentage.Model DevelopmentModel Development
+## Model Development
 
-![](/uploads/around-the-bay-pacing-form-2016-19.png)
+With these filters in place we can take each runners pace for each segment and divide that by the average pace for the entire race to get a percentage.![](/uploads/around-the-bay-pacing-form-2016-19.png)
 
 The different filters are plotted along the course profile and compared with the even pace heuristic (constant 100% pace). Each group ran faster (pace <100%) for the first 20km of the race, and slower for the last 10km. This feels right since the first two-thirds of the race are downhill or flat, and the last third is very hilly. All the runners combined highlights the suboptimal pacing of the average Around the Bay runner as they tend to go out significantly faster than they finish. The elite runners tend to run much closer to even splits, while the multi-finishers sit in-between, but close to the average.
 
