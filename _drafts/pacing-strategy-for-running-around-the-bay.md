@@ -89,9 +89,9 @@ The other, more relevant to me filter is just for those athletes who ran faster 
 
 Being the leading end of the distribution, most of the times are near the 2 hour mark. 
 
-With these filters in place we can take each runners pace for each segment and divide that by the average pace for the entire race
+With these filters in place we can take each runners pace for each segment and divide that by the average pace for the entire race to get a percentage. 
 
-![](/uploads/around-the-bay-pacing-form-2016-19.png)
+The different filters are plotted along the course profile and compared with 
 
 ![](/uploads/around-the-bay-pacing-comparison.png)
 
