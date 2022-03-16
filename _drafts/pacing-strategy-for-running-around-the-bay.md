@@ -93,7 +93,9 @@ To include the Gradient Adjusted Pace models I calculated the gradient throughou
 
 To use the Jack Daniels equation had convert the time change in each segment to a percentage by comparing against my goal pace (3:36min/km). With slower goal paces the predicted effect by this formula lessens as it suggests adding a constant time to all performances, so seen as a percent it would regress toward even pacing.
 
-Interestingly the closest model to the elite performance was actually the Jack Daniels formula. 
+![](/uploads/around-the-bay-pacing-comparison.png)
+
+Interestingly, the closest model to the elite performance was actually the Jack Daniels formula. It's my assumption that the Jack Daniels study was done on elite athletes, while the Strava and Minetti studies were more for the average runner. With this comparison it does validate to me that the elite athletes have followed a good pacing strategy, as they are within 1% of each pacing model.
 
 ## Prescription
 
