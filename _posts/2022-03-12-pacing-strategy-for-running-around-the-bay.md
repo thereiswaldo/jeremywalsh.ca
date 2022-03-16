@@ -83,9 +83,19 @@ Being the leading end of the distribution, most of the times are near the 2 hour
 
 ## Model Evaluation
 
-With these filters in place we can take each runners pace for each segment and divide that by the average pace for the entire race to get a percentage.![](/uploads/around-the-bay-pacing-form-2016-19.png)
+With these filters in place we can take each runners pace for each segment and divide that by the average pace for the entire race to get a percentage.
 
-The different filters are plotted along the course profile and compared with the even pace heuristic (constant 100% pace). Each group ran faster (pace <100%) for the first 20km of the race, and slower for the last 10km. This feels right since the first two-thirds of the race are downhill or flat, and the last third is very hilly. All the runners combined highlights the suboptimal pacing of the average Around the Bay runner as they tend to go out significantly faster than they finish. The elite runners tend to run much closer to even splits, while the multi-finishers sit in-between, but close to the average.
+![](/uploads/around-the-bay-pacing-form-2016-19.png)
+
+The different filters are plotted along the course profile and compared with the even pace heuristic (constant 100% pace). Each group ran faster (pace <100%) for the first 20km of the race, and slower for the last 10km. This feels right since the first two-thirds of the race are downhill or flat, and the last third is very hilly. All the runners combined highlights the suboptimal pacing of the average Around the Bay runner as they tend to go out significantly faster than they finish. On average the runners don't save enough energy for the hills at the end of the race. 
+
+The elite runners tend to run much closer to even splits, while the multi-finishers sit in-between, but close to the average. 
+
+Even our elite filter seems to include outliers that 
+
+![](/uploads/elite-pace-percentage-boxplot.png)
+
+![](/uploads/elites-pacing-correlation.png)
 
 This is informative, but hasn't completely answered the question about what pacing strategy is optimal. It could be that these elite athletes are doing something wrong. In attempt to validate their performance we'll include the other pacing models.
 
