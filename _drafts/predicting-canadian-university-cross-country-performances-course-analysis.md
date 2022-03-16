@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Predicting Canadian University Cross Country Performances - Course Analysis
-date: 2021-06-13 04:00:00 +0000
+date: 2021-06-13T04:00:00.000+00:00
 categories: ''
 
 ---
@@ -11,11 +11,10 @@ Cross country courses are all unique. Most in Canada are a series of loops over 
 
 #### insert two same distance course profiles from tableau (satellite image, elevation profile, course records, avg times, avg entrants)
 
-In order for us to make accurate predictions we want to be able to compare different courses so we can translate a performance on one course to another. To do that we want to boil the measurable differences between the courses down to individual numbers that we can train our model on. We'll do this by analyzing three features:
+In order for us to make accurate predictions we want to be able to compare different courses so we can translate a performance on one course to another. To do that we want to boil the measurable differences between the courses down to individual numbers that we can train our model on. We'll do this by analyzing two features:
 
 * Elevation profile
-* The number and degree of turns
-* The heading
+* Number and degree of turns
 
 For each of these features we want a single parameter that quantifies their effect on race times. This post is concerned with developing several options for these parameters, and later when we begin modelling we will prune down to the most predictive features on the data.
 
@@ -61,6 +60,5 @@ I haven't found a good name for "amount and severity of turns", so for succintit
   * explain effect from looking at world records for indoor and outdoor of different distances. Look at how they change iwth distance (is it mostly speed based/forces on the body?)
 * 1m vectored directions, use for when get wind direction determine distance into the wind, distance tailwind, distance perpendicular to use for drag. Would eventually cross the wind direction and distance travelled in a drag formula.
 
-## Heading
 
-The final parameter I want to include is the heading. This should be the direction travelling at each point in the race. 
+* 
