@@ -87,13 +87,13 @@ With these filters in place we can take each runners pace for each segment and d
 
 ![](/uploads/around-the-bay-pacing-form-2016-19.png)
 
-The different filters are plotted along the course profile and compared with the even pace heuristic (constant 100% pace). Each group ran faster (pace <100%) for the first 20km of the race, and slower for the last 10km. This feels right since the first two-thirds of the race are downhill or flat, and the last third is very hilly. All the runners combined highlights the suboptimal pacing of the average Around the Bay runner as they tend to go out significantly faster than they finish. On average the runners don't save enough energy for the hills at the end of the race. 
+The different filters are plotted along the course profile and compared with the even pace heuristic (constant 100% pace). Each group ran faster (pace <100%) for the first 20km of the race, and slower for the last 10km. This feels right since the first two-thirds of the race are downhill or flat, and the last third is very hilly. All the runners combined highlights the suboptimal pacing of the average Around the Bay runner as they tend to go out significantly faster than they finish. On average the runners don't save enough energy for the hills at the end of the race. To back this up, if we look at the correlation between the paces, we can see that best determinant for a runners pace in the last 10km of the race is what they ran in the first 10km.
 
-The elite runners tend to run much closer to even splits, while the multi-finishers sit in-between, but close to the average. 
+![](/uploads/all-pacing-correlation.png)
 
-Even our elite filter seems to include outliers that 
+A correlation of -0.89 is very strong, and means that on average the athletes that start too fast, finish the slowest.
 
-![](/uploads/elite-pace-percentage-boxplot.png)
+The multi-finishers tend to run closer to even splits, while the elite runners only have 3% variation in pace. The elite filter is not infallible however, as there is are a number of outliers that seem to start out too fast (10%. This shifts our averages slightly to faster starts and slower finishes, but not significantly so we'll leave them in.
 
 ![](/uploads/elites-pacing-correlation.png)
 
