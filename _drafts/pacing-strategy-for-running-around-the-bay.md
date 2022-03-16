@@ -87,13 +87,11 @@ With these filters in place we can take each runners pace for each segment and d
 
 The different filters are plotted along the course profile and compared with the even pace heuristic (constant 100% pace). Each group ran faster (pace <100%) for the first 20km of the race, and slower for the last 10km. This feels right since the first two-thirds of the race are downhill or flat, and the last third is very hilly. All the runners combined highlights the suboptimal pacing of the average Around the Bay runner as they tend to go out significantly faster than they finish. The elite runners tend to run much closer to even splits, while the multi-finishers sit in-between, but close to the average.
 
-This is informative, but hasn't completely answered the question about what pacing strategy is optimal. It could be that these elite athletes are doing something wrong. In attempt to validate their performance we'll include the other pacing models. 
+This is informative, but hasn't completely answered the question about what pacing strategy is optimal. It could be that these elite athletes are doing something wrong. In attempt to validate their performance we'll include the other pacing models.
 
-To include the Gradient Adjusted Pace models I calculated the gradient throughout the course and applied each model. I then averaged the percentage pace over each segment. 
+To include the Gradient Adjusted Pace models I calculated the gradient throughout the course and applied each model. I then averaged the percentage pace over each segment.
 
-To use the Jack Daniels equation I entered my goal pace (3:36min/km), and calculated the amount of time gained or lost at each point. I then summed this on the segment level and then converted it to a percentage of pace by dividing by the   was applied similarly, but required a pace
-
-![](/uploads/around-the-bay-pacing-comparison.png)
+To use the Jack Daniels equation had convert the time change in each segment to a percentage by comparing against my goal pace (3:36min/km). With slower goal paces the predicted effect by this formula lessens as it suggests adding a constant time to all performances, so seen as a percent it would regress toward even pacing.
 
 ## Prescription
 
