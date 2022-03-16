@@ -93,6 +93,8 @@ To include the Gradient Adjusted Pace models I calculated the gradient throughou
 
 To use the Jack Daniels equation had convert the time change in each segment to a percentage by comparing against my goal pace (3:36min/km). With slower goal paces the predicted effect by this formula lessens as it suggests adding a constant time to all performances, so seen as a percent it would regress toward even pacing.
 
+Interestingly the closest model to the elite performance was actually the Jack Daniels formula. 
+
 ## Prescription
 
 The simplified takeaway from this is that runners at Around the Bay should average the first half of the race at around 1% faster than their goal pace. For me that's about two to three seconds per kilometer faster than my goal pace. Speaking from experience (and common sense), the last 10 kilometers is no longer about holding yourself back with proper pacing. Instead you are pushing yourself to the finish line as hard as you can. Running this section slow is to be expected, and maintaining a pace 2-3% slower than goal pace in this section is something to be extremely happy with.
