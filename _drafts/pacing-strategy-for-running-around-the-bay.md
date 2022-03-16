@@ -71,17 +71,17 @@ As we expected, the final 10km of the race are slowest. On average the first 10k
 
 ## Data Filtering
 
-Keeping my filtering as simple as possible I've selected two comparison criteria. The first is to only look at runners that have previously run the race in my dataset. The thought is these multiple finishers will know the course well and how they should pace themselves. Dropping each runners first performance in the dataset leaves in a wide distribution of times and keeps 4622 performances (26% of the 17440 in the dataset).
+Keeping my filtering as simple as possible I've selected two comparison criteria. The first is to only look at runners that have previously run the race in my dataset. The thought is these multiple finishers will know the course well and how they should pace themselves. Dropping each runner's first performance in the dataset leaves in a wide distribution of times and keeps 4622 performances (26% of the 17440 in the dataset).
 
 ![](/uploads/multiple-finishers-30km-time-distribution.png)
 
-The other, more relevant to me filter is just for those athletes who ran faster than two hours. Though the definition of elite is up for debate, this the top 1.6% of all finishers, and leaves just 279 performances which is enough for me to feel confident about the aggregated data.
+The other, more relevant to me filter is just for those "elite" athletes who ran faster than two hours. Though the definition of elite is up for debate, this the top 1.6% of all finishers, and leaves just 279 performances which is enough for me to feel confident about the aggregated data.
 
 ![](/uploads/elites-30km-time-distribution.png)
 
 Being the leading end of the distribution, most of the times are near the 2 hour mark.
 
-## Model Development
+## Model Evaluation
 
 With these filters in place we can take each runners pace for each segment and divide that by the average pace for the entire race to get a percentage.![](/uploads/around-the-bay-pacing-form-2016-19.png)
 
