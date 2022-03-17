@@ -15,9 +15,9 @@ For a runner hoping to meet a specific time it begs the question of whether they
 
 #### Even Pace/Even Effort
 
-The simplest of the pacing strategies are even pace, and even effort. Even pacing simple means to run the same pace throughout the race. It's a good strategy for a flat course, but can be near impossible to replicate on a hilly course. The alternative is even effort, where an exertion level is kept constant, as pace is slowed on uphills and increased on downhills. This is a good simple heuristic, but can be difficult to follow in a race. Unless one is diligently heart rate or power training, it's difficult to start and maintain an effort throughout a race.
+The simplest of the pacing strategies are even pace, and even effort. Even pacing simple means to run the same pace throughout the race. It's a good strategy for a flat course, but can be near impossible to replicate on a hilly course. The alternative is even effort, where an exertion level is kept constant, as pace is slowed on uphills and increased on downhills. This is a good simple heuristic, but can be difficult to follow in a race. Unless one is diligently heart rate or power training, it's difficult to start and maintain an effort throughout a race. Thankfully, there are some guidelines for running at even effort.
 
-At a slightly higher complexity level are the rules developed from two of the most infamous studies on the subject.
+First there are the rules developed from two of the most infamous studies on the subject.
 
 #### Jack Daniels
 
@@ -39,7 +39,7 @@ Jack and John both expressed that there formulas are merely guidelines, that see
 
 #### Grade Adjusted Pace
 
-Strava has a model they apply for all subscribers on their platform called Grade Adjusted Pace. I'll discuss it further in an upcoming post about cross country courses. [This blog post](https://medium.com/strava-engineering/an-improved-gap-model-8b07ae8886c3) details the model and compares it with a study from a [2002 paper](https://pubmed.ncbi.nlm.nih.gov/12183501/) on the matter. For our comparison we will use both the Strava and Minetti curves.
+Strava has a model they apply for all subscribers on their platform called Grade Adjusted Pace. I'll discuss it further in an upcoming post about cross country courses. [This blog post](https://medium.com/strava-engineering/an-improved-gap-model-8b07ae8886c3) details the model and compares it with a study from a [2002 paper](https://pubmed.ncbi.nlm.nih.gov/12183501/) on the matter. For our comparison we will use both the Strava and Minetti curves. As shown in the diagram, they use Equal Energy Cost and Equal Heartrate as a proxies for even effort.
 
 ![](https://miro.medium.com/max/1400/1*_TwofsNS872wbUS12ykKPQ.png)
 
@@ -75,23 +75,25 @@ Keeping my filtering as simple as possible I've selected two comparison criteria
 
 ![](/uploads/multiple-finishers-30km-time-distribution.png)
 
-The other, more relevant filter is to keep only the "elite" athletes who ran faster than two hours. Though the definition of elite is up for debate, this the top 1.6% of all finishers, and leaves just 279 performances. This large enough for me to feel confident in the aggregated results while maximizing the amount of runners that ran close to an optimal pacing strategy.
+The other more relevant filter is to keep only the "elite" athletes who ran faster than two hours. Though the definition of elite is up for debate, this is the top 1.6% of all finishers, and leaves just 279 performances. This is large enough for me to feel confident in the aggregated results while maximizing the amount of runners that ran close to an optimal pacing strategy. My assumption is that on average elite runners maintain an even effort.
 
 ![](/uploads/elites-30km-time-distribution.png)
 
-Being the leading end of the distribution, most of the times are near the 2 hour mark.
+Being the leading end of the distribution, most of the times are near the two hour mark.
 
 ## Model Evaluation
+
+#### Race Result Analysis
 
 With these filters in place we can take each runners pace for each segment and divide that by the average pace for the entire race to get a percentage.
 
 ![](/uploads/around-the-bay-pacing-form-2016-19.png)
 
-The different filters are plotted along the course profile and compared with the even pace heuristic (constant 100% pace). Each group ran faster (pace <100%) for the first 20km of the race, and slower for the last 10km. This feels right since the first two-thirds of the race are downhill or flat, and the last third is very hilly. All the runners combined highlights the suboptimal pacing of the average Around the Bay runner as they tend to go out significantly faster than they finish. On average the runners don't save enough energy for the hills at the end of the race. To back this up, if we look at the correlation between the paces, we can see that best determinant for a runners pace in the last 10km of the race is what they ran in the first 10km.
+The different filters are plotted along the course profile and compared with the even pace heuristic (constant 100% pace). Each group ran faster (pace <100%) for the first 20km of the race, and slower for the last 10km. This feels right since the first two-thirds of the race are downhill or flat, and the last third is very hilly. All the runners combined highlights the suboptimal pacing of the average Around the Bay runner as they tend to go out significantly faster than they finish. On average the runners don't save enough energy for the hills at the end of the race. To back this up, if we look at the correlation between the paces, we can see that best determinant for a runner's pace in the last 10km of the race is what they ran in the first 10km.
 
 ![](/uploads/all-pacing-correlation.png)
 
-A correlation of -0.89 is very strong, and means that on average the athletes that start too fast, finish the slowest.
+A correlation of -0.89 is very strong, and means that on average the athletes that start too fast finish the slowest.
 
 The multi-finishers tend to run closer to even splits, while the elite runners only have 3% variation in pace. However, the elite filter is not perfect, as there is are several outliers that seem to start out too fast (10% faster than they average!). This shifts our averages slightly to faster starts and slower finishes, but not significantly so we'll leave them in.
 
@@ -99,16 +101,18 @@ The multi-finishers tend to run closer to even splits, while the elite runners o
 
 ![](/uploads/elites-pacing-correlation.png)
 
-This is informative, but hasn't completely answered the question about what pacing strategy is optimal. I want to trust the average elite pacing, but it could be that the outliers are racing optimally. In attempt to validate their performance we'll include the other pacing models.
+All of this is informative, but hasn't completely answered the question about what pacing strategy is optimal. I want to trust the average elite pacing, but it could be that the outliers are racing optimally. In an attempt to validate their performance we'll include the other pacing models.
 
-To include the Gradient Adjusted Pace models I calculated the gradient throughout the course and applied each model. I then averaged the percentage pace over each segment.
+#### Grade Adjusted Pace Model
 
-To use the Jack Daniels equation had convert the time change in each segment to a percentage by comparing against my goal pace (3:36min/km). With slower goal paces the predicted effect by this formula lessens as it suggests adding a constant time to all performances, so seen as a percent it would regress toward even pacing.
+To include the Grade Adjusted Pace models I calculated the gradient throughout the course and applied each model. I then averaged the percentage pace over each segment.
+
+To use the Jack Daniels equation I converted the time change in each segment to a percentage by comparing against my goal pace (3:36min/km). With slower goal paces the predicted effect by this formula lessens as it suggests adding a constant time to all performances, so seen as a percent it would regress toward even pacing.
 
 ![](/uploads/around-the-bay-pacing-comparison.png)
 
-Interestingly, the closest model to the elite performance was actually the Jack Daniels formula. It's my assumption that the Jack Daniels study was done on elite athletes, while the Strava and Minetti studies were more for the average runner. With this comparison it does validate to me that the elite athletes have followed a good pacing strategy, as they are within 1% of each pacing model.
+Interestingly, the closest model to the elite performance was actually the Jack Daniels formula. I think this is because the Jack Daniels study was done on elite athletes, while the Strava and Minetti studies were more for the average runner. With this comparison it does validate to me that the elite athletes have followed a good pacing strategy, as they are within 1% of each pacing model. 
 
 ## Prescription
 
-The simplified takeaway from this is that runners at Around the Bay should average the first half of the race at around 1% faster than their goal pace. For me that's about two to three seconds per kilometer faster than my goal pace. Speaking from experience (and common sense), the last 10 kilometers is no longer about holding yourself back with proper pacing. Instead you are pushing yourself to the finish line as hard as you can. Running this section slow is to be expected, and maintaining a pace 2-3% slower than goal pace in this section is something to be extremely happy with.
+The simplified takeaway from this is that runners at Around the Bay should average the first half of the race at around 1% faster than their goal pace. This sets them up to run an even effort for the duration of the race, providing some banked time to lose in the hills. For me that means starting two to three seconds per kilometer faster than my goal pace. Speaking from experience, the last 10 kilometers is no longer about holding yourself back with proper pacing. Instead you are pushing yourself to the limit as you fight towards the finish line. Slowing down on this section is to be expected, and maintaining a pace 2-3% slower than goal pace in this section is something to be extremely happy with.
