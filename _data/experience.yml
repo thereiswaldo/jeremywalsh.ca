@@ -6,7 +6,8 @@
   # quote: >
   #  Short description of the company (optional)
   description: >
-    Driving continuous improvement and evolution into industry 4.0 through the application of statistical analysis and data science.
+    Driving continuous improvement and evolution into industry 4.0 through the application of statistical analysis and data science. Led an in-depth analysis of manufacturing process data that identified patterns for flagging out of compliance materials. Sourced data from Oracle, and SQL Server to develop and validate an energy  forecasting model, and reported KPIs through Power BI.
+
 - layout: left
   company: Lead Researcher
   link: https://www.suezwatertechnologies.com/
@@ -15,7 +16,7 @@
   # quote: >
   #  Short description of the company (optional)
   description: >
-    Developing hybrid data-driven and mechanistic models for water treatment plant analysis and simulation. Designing optimal control methods for complex systems. Applying machine learning techniques to forecast water system performance and detect important events.
+    Developed hybrid data-driven and mechanistic models for water treatment plant analysis and simulation. Designed optimal control methods for complex water systems. Applied machine learning techniques to forecast water system performance and detect important events.
 - layout: left
   company: Process Engineer
   job_title: SUEZ Water Technologies and Solutions
@@ -23,7 +24,7 @@
   # quote: >
   #  Short description of the company (optional)
   description: >
-    Designed and scaled regression analysis for 20 sites, evolving analytics to influence strategic planning and product design. Developed a simulation for optimal control testing. Performed process validation on drinking and waste water sites from Abu Dhabi to Mississauga.
+    Designed and scaled time series regression analysis for 20 sites, evolving analytics to influence strategic planning and product design. Developed a simulation for optimal control testing. Performed process validation on drinking and waste water sites from Abu Dhabi to Mississauga.
 
 - layout: left
   company: Project Engineer
