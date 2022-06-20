@@ -72,4 +72,6 @@ Running a ridge regression against all the data led to a 98% accuracy. The high 
 
 The features that had the most influence on the fastest lap time have the highest magnitude coefficient. A positive coefficient means that feature influences a slower lap time, while a negative coefficient means that feature causes a faster lap time. 
 
+### Conclusion
+
 This analysis shows that karts have a significant impact on the fastest lap time. It also suggests that Sean is the fastest driver of us all. He was able to get more out of all of his karts. There are enough faults in this analysis however that only more racing will prove who is best.
