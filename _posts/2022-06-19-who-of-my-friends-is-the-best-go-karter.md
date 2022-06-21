@@ -59,6 +59,8 @@ The dataset I used for the regression analysis included:
   * None of us are seasoned go-karters so we improved with each race, especially after the first.
 * **Start Position**
   * On the small track we raced it was very difficult to pass so starting first was expected to have a large advantage. This can be seen in each race, like here in race 3 were the leaders that got out cleanly went unchallenged, but the highly defensive driver Pat slowed down drivers in behind him, even as they came up to lap him.
+
+    ![](/uploads/gap-to-current-first-place-in-race3.png)
 * **Drivers**
   * Our names one-hot-encoded for interpretation by the algorithm.
 * **Kart Numbers**
