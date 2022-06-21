@@ -37,7 +37,7 @@ All of this is assuming our karts were all equal. The feeling we all had was tha
 
 #### Kart Scoring
 
-The karts were randomly assigned by the workers before each race, and most of us got to use a unique kart for each race, with most karts doing 3-4 races.
+The karts were randomly assigned by the staff before each race, and most of us got to use a unique kart for each race, with most karts doing 3-4 races.
 
 ![](/uploads/kart-numbers.png)
 
