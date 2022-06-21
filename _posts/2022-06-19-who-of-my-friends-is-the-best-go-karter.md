@@ -79,3 +79,5 @@ Based on this dataset the best Go-Karter was Pat, and if he was put in Kart #8, 
 ### Conclusion
 
 This analysis shows that karts have a significant impact on the fastest lap time. It also suggests that, despite scoring well, I am not the fastest driver. The model thinks that Pat was able to get more out of slower karts. Personally, I disagree with this conclusion, and will welcome the challenge to get more data in further racing.
+
+The code I wrote for this analysis [is posted on my github](https://github.com/thereiswaldo/GoKarts).
