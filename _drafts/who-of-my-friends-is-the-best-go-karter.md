@@ -63,15 +63,17 @@ The dataset I used for the regression analysis included:
   * Our names one-hot-encoded interpretation by the algorithm without bias.
 * Kart Numbers
   * The kart numbers one-hot-encoded to remove any confusion in the algorithm relating independent kart numbers.
-* Fastest Lap
-  * This is the dependent variable that I'm trying to predict from the data. It was chosen so as to limit the influence of racing, and because it's model accuracy was higher than using the mean lap (46% vs 98%).
+* Filtered Mean Lap
+  * This is the dependent variable that I'm trying to predict from the data. It is the mean lap time after removing the crash laps that were slower than 40s. It was chosen so as to limit the effect of the outlier crash laps when we had to stop for a kart to be turned around.
 
-Running a ridge regression against all the data led to a 98% accuracy. The high accuracy is because the model is overfit and would likely do a terrible job predicting future scores. Given the small amount of data available however, the coefficients seen below can give us some insight.
+Running a ridge regression against all the data led to an accuracy score of 85%. The high accuracy is partially because the model is overfit and would likely do a poor job predicting future scores. Things like Ryan's laps not all being sensed in our first race, or the randomness of our first time racing would be corrected over more races. Given the small amount of data available however, the coefficients seen below can still give us some insight.
 
-![](/uploads/regression-coefficients-for-fastest-lap.png)  
+![](/uploads/regression-coefficients-for-filtered-mean-lap.png)
 
 The features that had the most influence on the fastest lap time have the highest magnitude coefficient. A positive coefficient means that feature influences a slower lap time, while a negative coefficient means that feature causes a faster lap time. 
 
+Based on this dataset the best Go-Karter was Pat, and if he was put in Kart #8, in a later race of the day we'd expect that combination to dominate. 
+
 ### Conclusion
 
-This analysis shows that karts have a significant impact on the fastest lap time. It also suggests that Sean is the fastest driver of us all. He was able to get more out of all of his karts. There are enough faults in this analysis however that only more racing will prove who is best.
+This analysis shows that karts have a significant impact on the fastest lap time. It also suggests that, despite scoring well, that I am not fastest driver. It suggests that Pat and Sean were able to get more out of their karts slower karts in the races. Personally, I disagree with this conclusion, and will challenge anyone to take me on.
