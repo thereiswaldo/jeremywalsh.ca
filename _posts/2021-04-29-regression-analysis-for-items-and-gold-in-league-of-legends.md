@@ -1,10 +1,13 @@
 ---
 layout: single
 title: Regression Analysis for Items and Gold in League of Legends
-date: 2021-05-09 00:00:00 +0000
+date: '2021-05-09 00:00:00 +0000'
 categories: ''
-
+_template: blog_post
 ---
+
+
+
 Continuing my analysis on League of Legends ([first post here](http://jeremywalsh.ca/2021/04/15/league-of-legends-analyzing-champion-basic-stats.html)), I want to talk about items in the game. As a new player one of the things that I feel isn't well communicated is the importance of getting gold to build items. Items have many effects in the game, but here I'm going to focus on how they alter the base stats of the champions.
 
 If you want to follow along the code is posted ([here](https://github.com/thereiswaldo/LoL-Champ-Analysis/blob/main/LoL%20Items.ipynb)).

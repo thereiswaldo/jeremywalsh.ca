@@ -1,10 +1,13 @@
 ---
 layout: single
 title: Who of my friends is the best Go-Karter?
-date: 2022-06-19 04:00:00 +0000
+date: '2022-06-19 04:00:00 +0000'
 categories: ''
-
+_template: blog_post
 ---
+
+
+
 My friends and I recently went Go-Karting, and after four 16 minute races we wanted to know who among us was the overall best driver. One method of doing that would be to look at the place we all came in at each race, assign a point value for each place and sum the points. You could do the same method by taking only the fastest lap from each driver every race. Importantly, neither of these methods take the actual go karts into account. We were able to drive in different karts for each race and had the feeling that some karts were better than others. Some karts skidded more easily, and some felt like that had better engines.
 
 Here is how I went about answering the question of who was the best driver?

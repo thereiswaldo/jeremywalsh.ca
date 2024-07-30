@@ -1,0 +1,27 @@
+{
+  "name": "jeremywalsh.ca",
+  "version": "1.0.0",
+  "description": "Code for my personal website. Forked site from https://github.com/mmistakes and forked resume template from https://github.com/sproogen/modern-resume-theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thereiswaldo/jeremywalsh.ca.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thereiswaldo/jeremywalsh.ca/issues"
+  },
+  "homepage": "https://github.com/thereiswaldo/jeremywalsh.ca#readme",
+  "dependencies": {
+    "tinacms": "^2.1.0"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.52",
+    "@types/node": "^22.0.0"
+  }
+}

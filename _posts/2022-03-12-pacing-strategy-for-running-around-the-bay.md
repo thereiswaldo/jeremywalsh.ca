@@ -1,10 +1,13 @@
 ---
 layout: single
 title: Pacing Strategy for Running Around the Bay
-date: 2022-03-12T05:00:00.000+00:00
+date: 2022-03-12T05:00:00.000Z
 categories: ''
-
+_template: blog_post
 ---
+
+
+
 A friend was wondering how to pace themselves at the Around the Bay 30km road race on March 27th. The race has a unique elevation profile, with several significant hills in the last 10km.
 
 ![](/uploads/around-the-bay-course-profile.png)

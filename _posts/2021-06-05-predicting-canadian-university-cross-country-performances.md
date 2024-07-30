@@ -1,10 +1,13 @@
 ---
 layout: single
 title: Predicting Canadian University Cross Country Performances - Introduction
-date: 2021-06-05 04:00:00 +0000
+date: '2021-06-05 04:00:00 +0000'
 categories: ''
-
+_template: blog_post
 ---
+
+
+
 A project of mine that keeps coming back to me is predicting USport/CIS Cross Country results. During my time at McMaster University I competed on the cross country team and like many of my competitors, enjoyed guessing how the championship races would play out. Most of these predictions are made at the team level, guessing which university will win the team title, and how the other schools will finish. I was involved in many different predictions, but the one I spent the most time on was a [full individual prediction of every athlete](https://web.archive.org/web/20131105103135/http://www.trackie.com/track-and-field/Forum/cis-and-conference-individual-team-predictor/9714/1/ "CIS and Conference Individual Team Predictor"). The thought process was that in order to better predict each team's performance, I would look at how the individuals should perform against each other, build out a full simulated race, and then aggregate the individual results to the team level. This worked pretty well, but it relied on some guesswork and some broad assumptions.
 
 Seven years down the road, my data science skills have improved and I wanted to revisit this problem. Predicting cross country results are difficult for many reasons, but before we talk about the roadblocks in our way I'll give a brief overview on the relevant rules of the sport.
