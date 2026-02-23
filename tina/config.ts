@@ -1,5 +1,4 @@
 import { defineConfig } from "tinacms";
-import { blog_postFields } from "./templates";
 
 const branch =
   process.env.GITHUB_BRANCH ||
@@ -36,8 +35,8 @@ export default defineConfig({
             readonly: false,
             slugify: values => {
               const date = new Date();
-              const day = date.getDate();
-              const month = date.getMonth() + 1;
+              const day = date.getDate().toString().padStart(2, '0');
+              const month = (date.getMonth() + 1).toString().padStart(2, '0');
               const year = date.getFullYear();
         
               let currentDate = `${year}-${month}-${day}`;
