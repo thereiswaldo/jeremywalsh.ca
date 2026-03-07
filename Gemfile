@@ -1,7 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.7"
+gem "jekyll"
 gem "minimal-mistakes-jekyll"
 gem "kramdown-parser-gfm"
-gem "modern-resume-theme"
 gem "ffi", "< 1.17.0"
+
+gem "sassc", "~> 2.4"
+
+gem "jekyll-seo-tag", "~> 2.8"

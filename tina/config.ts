@@ -12,16 +12,15 @@ export default defineConfig({
   token: process.env.TINA_TOKEN,
   client: {
     skip: true,
-    verbose: true, // Enable verbose logging
   },
   build: {
     outputFolder: "admin",
-    publicFolder: "./",
+    publicFolder: "public",
   },
   media: {
     tina: {
+      publicFolder: "public",
       mediaRoot: "uploads",
-      publicFolder: "assets",
     },
   },
   schema: {
@@ -38,9 +37,9 @@ export default defineConfig({
               const day = date.getDate().toString().padStart(2, '0');
               const month = (date.getMonth() + 1).toString().padStart(2, '0');
               const year = date.getFullYear();
-        
+
               let currentDate = `${year}-${month}-${day}`;
-        
+
               return `${currentDate}-${values?.title?.toLowerCase().replace(/ /g, '-')}`
             }
           }
@@ -52,20 +51,20 @@ export default defineConfig({
             label: "Layout",
             required: true,
           },
-          { 
+          {
             type: "string",
             name: "title",
             label: "Title",
             isTitle: true,
             required: true,
           },
-          { 
+          {
             type: "datetime",
             name: "date",
             label: "Date",
             required: true,
           },
-          { 
+          {
             type: "string",
             name: "categories",
             label: "Categories",
