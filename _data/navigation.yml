@@ -1,8 +1,7 @@
-# main links
 main:
-  # - title: "Quick-Start Guide"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Home"
+    url: /
   - title: "Resume"
     url: /resume.html
   - title: "Running Blog"
-    url: http://jeremywalshsrunning.blogspot.com/
+    url: /2026/02/24/sulphur-springs-2025-data-analysis.html

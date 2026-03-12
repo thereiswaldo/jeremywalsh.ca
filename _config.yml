@@ -23,7 +23,8 @@ email: jeremy.p.walsh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A place to showcase my projects and my passion for data science, and sport.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://jeremywalsh.ca" # the base hostname & protocol for your site, e.g. http://example.com
+minimal_mistakes_skin: "default"
 twitter_username: jwalshy
 github_username:  thereiswaldo
 linkedin_username: jeremy-walsh
@@ -36,10 +37,14 @@ theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
 
 sass:
   sass_dir: _sass
   style: compressed
+
+paginate: 10
+paginate_path: /page:num/
 
 logo: "/assets/images/headshot.jpg"
 
@@ -65,8 +70,16 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jeremy-walsh/"
 
-#resume attempt
-# About Section
+# Resume Data Sections
+resume_sections:
+  - id: projects
+    title: Projects
+  - id: experience
+    title: Experience
+  - id: education
+    title: Education
+
+# Resume About Section
 about_title: About Me
 about_profile_image: /assets/images/headshot.jpg
 about_content: | # this will include new lines to allow paragraphs

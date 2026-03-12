@@ -1,7 +1,5 @@
-- name: McMaster University
-  dates: April 2013
-  qualification: Bachelor of Engineering Physics
-  # quote: >
-  #   Nuclear Engineering and Energy Systems
+- title: McMaster University
+  caption: April 2013
+  sub_title: Bachelor of Engineering Physics
   description: >
     Nuclear Engineering and Energy Systems

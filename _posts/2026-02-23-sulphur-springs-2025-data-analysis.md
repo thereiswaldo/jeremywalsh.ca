@@ -4,7 +4,7 @@ title: Sulphur Springs 2025 Data Analysis
 date: 2026-02-24T17:56:54.066Z
 ---
 
-# Sulphur Springs 2025 - The evolution of a Canadian Classic
+# Sulphur Springs 2025 - The data behind a Canadian Classic
 
 The 2025 Canadian ultramarathon season was bigger than ever, with 200+ races and over 15,000 finishers. But amidst this explosive growth, the **Sulphur Springs Trail Run** has managed something rare: it hasn't just grown in size—it has fundamentally evolved in quality.
 
