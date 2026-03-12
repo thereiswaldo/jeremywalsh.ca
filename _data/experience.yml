@@ -1,10 +1,18 @@
 - layout: left
+  title: Veolia Water Technologies
+  sub_title: Product Owner
+  link: https://www.veoliawatertechnologies.com/en
+  caption: May 2023 - present
+  description: >
+    Leading the development of digital solutions for water treatment optimization. Defining product vision, strategy, and roadmap. Collaborating with cross-functional teams to deliver high-quality products that meet customer needs.
+
+- layout: left
   title: Arcelor Mittal Dofasco
   sub_title: Senior Data Analyst
   link: https://dofasco.arcelormittal.com/
-  caption: September 2021 - present
+  caption: September 2021 - May 2023
   description: >
-    Driving continuous improvement and evolution into industry 4.0 through the application of statistical analysis and data science. Led an in-depth analysis of manufacturing process data that identified patterns for flagging out of compliance materials. Sourced data from Oracle, and SQL Server to develop and validate an energy  forecasting model, and reported KPIs through Power BI.
+    Automated data collection from multiple sources to perform exploratory data analysis and predictive modelling of a complex process in cokemaking. Led an in-depth analysis of manufacturing process data that identified patterns for flagging out of compliance materials. Developed and validated an energy forecasting model, and reported KPIs through Power BI.
 
 - layout: left
   title: SUEZ Water Technologies and Solutions

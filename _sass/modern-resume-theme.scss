@@ -1,8 +1,9 @@
-@import "resume/base";
-@import "resume/button";
-@import "resume/type";
-@import "resume/dark";
-@import "resume/icons";
+.resume-theme {
+  @import "resume/base";
+  @import "resume/button";
+  @import "resume/type";
+  @import "resume/dark";
+}
 
 .header-right p {
   margin-bottom: 3px;

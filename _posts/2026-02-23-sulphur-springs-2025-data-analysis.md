@@ -4,7 +4,7 @@ title: Sulphur Springs 2025 Data Analysis
 date: 2026-02-24T17:56:54.066Z
 ---
 
-# Sulphur Springs 2025 - The data behind a Canadian Classic
+# The evolution of a Canadian Classic
 
 The 2025 Canadian ultramarathon season was bigger than ever, with 200+ races and over 15,000 finishers. But amidst this explosive growth, the **Sulphur Springs Trail Run** has managed something rare: it hasn't just grown in size—it has fundamentally evolved in quality.
 
@@ -28,11 +28,11 @@ When we compare Sulphur Springs to every other race in Canada using our DUV Resu
 
 This analysis focuses exclusively on these ultra distances (50k, 50M, 100k, and 100M) due to data accessibility, meaning the ranking doesn't even account for the high participation in the sub-ultra events, which saw an additional 355 finishers in the 20k and 255 in the 10k.
 
-![](/uploads/SulphurSprings/participation_comparison.png)
+![](/uploads/SulphurSprings/participation_comparison.png?v=2)
 
 When I sum up the distance that every finisher had for all the distances, Sulphur Springs moves up to 3rd largest ultra event in Canada.
 
-![](/uploads/SulphurSprings/distance_agg_comparison.png)
+![](/uploads/SulphurSprings/distance_agg_comparison.png?v=2)
 
 ### National Ranking: Men
 

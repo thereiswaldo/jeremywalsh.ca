@@ -2,37 +2,39 @@
 layout: default
 ---
 
-{% include resume_head.html %}
 
-{% include resume_header.html %}
+<div class="resume-theme">
+  {% include resume_header.html %}
 
-<main class="page-content" aria-label="Content">
-  <div class="wrapper">
-    <div class="container intro-container">
-      <h3>{{ site.about_title }}</h3>
-      <div class="row clearfix">
-        <div class="col-xs-12 col-sm-4 col-md-3 no-print">
-          <span class="profile-img" style="background-image: url({{ site.about_profile_image | relative_url }})"></span>
-        </div>
-        <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
-          {{ site.about_content | markdownify }}
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <div class="container intro-container">
+        <h3>{{ site.about_title }}</h3>
+        <div class="row clearfix">
+          <div class="col-xs-12 col-sm-4 col-md-3 no-print">
+            <span class="profile-img"
+              style="background-image: url({{ site.about_profile_image | relative_url }})"></span>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+            {{ site.about_content | markdownify }}
+          </div>
         </div>
       </div>
-    </div>
 
-    {% if site.resume_sections %}
-    {% for section in site.resume_sections %}
-    {% assign items = site.data[section.id] %}
-    {% if items %}
-    <div class="container list-container">
-      <h3>{{ section.title }}</h3>
-      {% include section-list.html content=items %}
-    </div>
-    {% endif %}
-    {% endfor %}
-    {% endif %}
+      {% if site.resume_sections %}
+      {% for section in site.resume_sections %}
+      {% assign items = site.data[section.id] %}
+      {% if items %}
+      <div class="container list-container">
+        <h3>{{ section.title }}</h3>
+        {% include section-list.html content=items %}
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
 
-  </div>
-</main>
+    </div>
+</div>
+</div>
 
 {% include resume_footer.html %}

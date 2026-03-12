@@ -51,7 +51,7 @@ logo: "/assets/images/headshot.jpg"
 author:
   name     : "Jeremy Walsh"
   avatar   : "/assets/images/headshot.jpg"
-  bio      : "I'm an engineer dedicated to applying data science to process optimization and sport."
+  bio      : "I'm a runner who enjoys applying data science to process optimization and sport."
   location : "Dundas, ON, Canada"
   links:
     - label: "GitHub"
@@ -83,8 +83,8 @@ resume_sections:
 about_title: About Me
 about_profile_image: /assets/images/headshot.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I'm an engineer who enjoys applying data science to process optimization and sport.
-  I have a Bachelor's of Engineering Physics from McMaster University and 8 years of experience in engineering and data analysis roles. I am currently working at ArcelorMittal Dofasco as a Senior Data Analyst.
+  I'm a runner who enjoys applying data science to process optimization and sport.
+  I have a Bachelor's of Engineering Physics from McMaster University and 13 years of experience in engineering and data science roles. I am currently working at Veolia as a Product Owner.
   I enjoy playing sports, games, and spending time with my family.
 
 content:
