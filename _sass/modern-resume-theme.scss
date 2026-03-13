@@ -1,8 +1,18 @@
 .resume-theme {
+  display: block;
+  max-width: 1400px;
+  margin: 0 auto !important;
+  padding: 0 40px;
+
+  @media screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
+
   @import "resume/base";
   @import "resume/button";
   @import "resume/type";
   @import "resume/dark";
+  @import "resume/icons";
 }
 
 .header-right p {

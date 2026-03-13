@@ -195,7 +195,7 @@ html {
   top: 0px;
 }
 
-body {
+& {
   background: #ffffff;
   font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -215,6 +215,13 @@ body {
 
 .header-container {
   margin-top: 50px;
+}
+
+.header-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .header-right {

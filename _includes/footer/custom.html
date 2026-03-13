@@ -1,3 +1,37 @@
 <!-- start custom footer snippets -->
+<script>
+    (function () {
+        var checkReady = function (callback) {
+            if (window.jQuery && window.jQuery.fn && window.jQuery.fn.magnificPopup) {
+                callback(window.jQuery);
+            } else {
+                window.setTimeout(function () { checkReady(callback); }, 100);
+            }
+        };
 
+        checkReady(function ($) {
+            $(document).ready(function () {
+                // Target images in blog posts
+                $('.page__content img').each(function () {
+                    var $img = $(this);
+                    // Skip if already wrapped in a link
+                    if ($img.parent('a').length > 0) return;
+
+                    // Wrap in link for Magnific Popup
+                    $img.wrap('<a href="' + $img.attr('src') + '" class="image-popup"></a>');
+                });
+
+                // Initialize Magnific Popup
+                $('.image-popup').magnificPopup({
+                    type: 'image',
+                    closeOnContentClick: true,
+                    mainClass: 'mfp-img-mobile',
+                    image: {
+                        verticalFit: true
+                    }
+                });
+            });
+        });
+    })();
+</script>
 <!-- end custom footer snippets -->

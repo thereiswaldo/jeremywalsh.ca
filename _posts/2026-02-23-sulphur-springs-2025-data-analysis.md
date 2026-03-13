@@ -16,7 +16,7 @@ From shattering decades-old course records to serving as an essential gateway to
 
 ## 1. The Performance Surge
 
-Trail and ultra running had steady growth for over a decade, and Sulphur Springs is certainly a large part of that. Taking all the [Canadian Ultra results listed on DUV ](https://statistik.d-u-v.org/geteventlist.php?year=2025\&dist=all\&country=CAN\&Submit.x=18\&Submit.y=5\&label=\&surface=all\&sort=1\&from=\&to=)(ultramarathon results platform), Sulphur Springs has grown alongside Canadian ultras.
+Trail and ultra running has had steady growth for over a decade, and Sulphur Springs is certainly a large part of that. Taking all the [Canadian Ultra results listed on DUV ](https://statistik.d-u-v.org/geteventlist.php?year=2025\&dist=all\&country=CAN\&Submit.x=18\&Submit.y=5\&label=\&surface=all\&sort=1\&from=\&to=)(ultramarathon results platform), Sulphur Springs has grown alongside Canadian ultras.
 
 ![](/uploads/SulphurSprings/national_growth_trend.png)
 
@@ -108,7 +108,7 @@ This talent naturally leads to shattered records. Comparing the progression of c
 
 ![](/uploads/SulphurSprings/course_records.png)
 
-I wanted to look at which of these course records was the most difficult to beat by comparing the top UTMB Index for each event. I wasn't surprised to see Alex and Amanda ontop, but as I examined the rest I noticed one of the quirks of using the Index.
+I wanted to look at which of these course records was the most difficult to beat by comparing the top UTMB Index for each event. I wasn't surprised to see Alex and Amanda on top, but as I examined the rest I noticed one of the quirks of using the Index.
 
 ![](/uploads/SulphurSprings/utmb_course_records.png)
 
